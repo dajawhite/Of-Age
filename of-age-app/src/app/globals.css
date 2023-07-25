@@ -20,3 +20,25 @@ body {
   color: rgb(var(--foreground-rgb));
   background: white;
 }
+
+.butt{
+  padding: 12px;
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+}
+
+
+hr{
+  border-color: black;
+}
+
+.social-box{
+  padding: 30px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: orange;
+}
+
+.pics{
+  object-fit: cover;
+}
