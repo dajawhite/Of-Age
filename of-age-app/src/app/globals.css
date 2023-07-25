@@ -6,6 +6,13 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary: #1b2954;
+  --secondary: #ffea89;
+  --bgA1: #093a3b;
+  --noti: #e09b69;
+  --cta: #6aaa82;
+  --bgA2: #96dadd;
+  --bg: rgb(253,254,245);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +31,7 @@ body {
 .butt{
   padding: 12px;
   margin-right: 10px;
-  background-color: black;
+  background-color: var(--primary);
   color: white;
 }
 
@@ -34,9 +41,10 @@ hr{
 }
 
 .social-box{
-  padding: 30px;
-  border-radius: 10px 10px 10px 10px;
-  background-color: orange;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: var(--cta);
+  color: white;
 }
 
 .pics{
