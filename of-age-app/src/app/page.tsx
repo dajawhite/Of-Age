@@ -9,6 +9,7 @@ import profile3 from './profile-3.jpg'
 export default function Home() {
   return (
     <main className='text-black '>
+      {/*header*/}
       <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
         <nav className="hidden md:flex items-center justify-between px-8 pt-4">
           <div className="flex space-x-4">
@@ -85,7 +86,8 @@ export default function Home() {
         <hr className='hidden mt-5'></hr>
       </section>
 
-      <section>
+      {/*articles*/}
+      <section style={{backgroundColor:"var(--bg)"}}>
         <div className="relative z-10">
           {/*large text */}
           <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center">
@@ -169,7 +171,7 @@ export default function Home() {
             <div className="ml-auto lg:mr-20 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
               <div   className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[256px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
-                  <Image width={100} height={100} alt='' src="/malibu.jpg"   className="object-cover w-full h-full transition duration-300 transform rounded-xl"/>
+                  <Image width={100} height={100} alt='' src="/malibu.jpg" className="object-cover w-full h-full transition duration-300 transform rounded-xl"/>
                 </div>
                 <div className="max-w-md">
                   <h3 className="relative text-2xl"></h3>
@@ -189,6 +191,51 @@ export default function Home() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/*what we do*/}
+      <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
+        <div className='grid grid-rows-6 gap-6'>
+          <div className='row-span-2 wwdbox'>
+            <div className='grid grid-rows-3 gap-8'>
+              <div className='row-span-1 mt-4'>
+                <h2 className='text-3xl mb-4'>Who's here</h2>
+                <p className='text-xl mb-4'>Want to meet the OA students?</p>
+                <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
+                <button className='rounded-full buttline'>Yes, I do!</button>
+              </div>
+              <div className='row-span-2' style={{position: 'relative', width: '100%', height: '100%'}}>
+                <Image src='/whohere.jpg' alt='' layout='fill' objectFit='cover' style={{borderRadius: 12}} />
+              </div>
+            </div>
+          </div>
+          <div className='row-span-2 wwdbox two'>
+            <div className='grid grid-rows-3 gap-8'>
+              <div className='row-span-1 mt-4'>
+                <h2 className='text-3xl mb-4'>What's being built</h2>
+                <p className='text-xl mb-4'>Your first-hand student founder source. </p>
+                <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
+                <button className='rounded-full buttline'>See the products</button>
+              </div>
+              <div className='row-span-2' style={{position: 'relative', width: '100%', height: '100%'}}>
+                <Image src='/beingbuilt.jpg' alt='' layout='fill' objectFit='cover' style={{borderRadius: 12}} />
+              </div>
+            </div>
+          </div>
+          <div className='row-span-2 wwdbox three'>
+            <div className='grid grid-rows-3 gap-8'>
+              <div className='row-span-1 mt-4'>
+                <h2 className='text-3xl mb-4'>Events</h2>
+                <p className='text-xl mb-4'>Join our in-person events...we don't do that virtual stuff.</p>
+                <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
+                <button className='rounded-full buttline' style={{color:'black'}} >Find or plan one</button>
+              </div>
+              <div className='row-span-2' style={{position: 'relative', width: '100%', height: '100%'}}>
+                <Image src='/events.jpg' alt='' layout='fill' objectFit='cover' style={{borderRadius: 12}} />
+              </div>
+            </div>
           </div>
         </div>
       </section>

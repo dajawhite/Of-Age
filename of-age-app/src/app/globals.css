@@ -35,6 +35,13 @@ body {
   color: white;
 }
 
+.buttline{
+  padding: 10px;
+  border-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+}
+
 
 hr{
   border-color: black;
@@ -50,3 +57,18 @@ hr{
 .pics{
   object-fit: cover;
 }
+
+.wwdbox{
+  padding: 16px;
+  background-color: var(--bgA2);
+  border-radius: 24px;
+}
+
+.wwdbox.two{
+  background-color: var(--noti);
+}
+
+.wwdbox.three{
+  background-color: var(--secondary);
+}
+
