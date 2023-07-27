@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import headerPic from './backpacking.jpg'
-import profile1 from './profile-1.jpg'
-import profile2 from './profile-2.jpg'
-import profile3 from './profile-3.jpg'
+import profile1 from './prof1oa.jpg'
+import profile2 from './prof2oa.jpg'
+import profile3 from './prof3oa_.jpg'
 
 
 
@@ -39,7 +39,7 @@ export default function Home() {
         </nav>
 
         <div className='mt-8 text-left'>
-          <h1 className='text-6xl'>Your first digital art collection.</h1>
+          <h1 className='text-6xl'>The only community for tech students.</h1>
           <hr className='mt-8'></hr>
         </div>
 
@@ -62,12 +62,12 @@ export default function Home() {
         </div>
 
         <div className='mt-8'>
-          <h2 className=''>JOIN OUR 150K+ COMMUNITY OF TALENTED ARTISTS</h2>
+          <h2 className=''>JOIN OUR 150K+ COMMUNITY OF STUDENTS</h2>
           <button className='rounded-full mt-2 butt'>Get Started</button>
         </div>
 
         <div className='mt-8'>
-        <Image src="/mobile-header.jpg" alt="Logo" width={350} height={80} className='pics' style={{borderRadius: 5}}/>
+        <Image src="/communityoa.jpg" alt="Logo" width={350} height={80} className='pics' style={{borderRadius: 5}}/>
         </div>
 
         <div className='mt-5'>
@@ -75,9 +75,9 @@ export default function Home() {
             <Image className='pics'src={headerPic} width={200} height={200} alt='' style={{borderRadius: 5}}></Image>
           </div>
           <div className=''>
-            <h2 className='mb-2'>We are the comprehensive online resource for digital artists that offers tutorials, tips, and tools.</h2>
-            <div className='flex justify-center'>
-              <button className='rounded-full butt'>Facebook</button>
+            <h2 className='mb-2'>We connect students who are breaking into tech and passionate about new ways of learning.</h2>
+            <div className='flex justify-center mt-4'>
+              <button className='rounded-full butt'>iMessage</button>
               <button className='rounded-full butt'>Twitter</button>
               <button className='rounded-full butt'>Instagram</button>
             </div>
@@ -92,7 +92,7 @@ export default function Home() {
           {/*large text */}
           <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center">
             <div className="max-w-6xl px-6 mx-auto">
-            <h2 className="my-20 text-5xl text-center lg:text-8xl lg:mt-0">Our team is next-level. And we're proud of it.</h2>
+            <h2 className="my-20 text-5xl text-center lg:text-8xl lg:mt-0">You are Of Age. They are Of Age.</h2>
             </div>
           </div>
 
@@ -102,10 +102,14 @@ export default function Home() {
             <div className="lg:ml-40 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
               <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[256px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
-                  <Image width={100} height={100} alt='' src="/malibu.jpg"  className="object-cover w-full h-full transition duration-300 transform rounded-xl"/>
+                  <Image layout='fill' objectFit='cover' alt='' src="/paytonoa.jpg"  className="w-full h-full rounded-xl" />
+                </div>
+                <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl"></h3>
+                  <h3 className="relative text-2xl">
+                    <p>I put an inclusive haircare line in 500 hotels worldwide.</p>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -114,13 +118,13 @@ export default function Home() {
             <div className="ml-auto z-20 max-w-[290px] lg:max-w-sm relative">
               <a href="/blog/stories/i-have-the-best-job-in-the-world" className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group h-[320px] lg:h-[460px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
-                  <Image width={100} height={100} alt='' src="/malibu.jpg" className="object-cover w-full h-full transition duration-300 transform rounded-xl group-hover:scale-110"/>
+                  <Image layout="fill" objectFit='cover' alt='' src="/jeremiahoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl group-hover:scale-110"/>
                 </div>
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
                   <h3 className="relative text-2xl">
-                    <p>I Have the Best Job in the World.</p>
+                    <p>I started TCU's Frog Fund.</p>
                   </h3>
                 </div>
                 <button className="z-10 block relative flex items-center mt-6 pointer-events-none"  >
@@ -141,14 +145,14 @@ export default function Home() {
             <div className="z-20 max-w-[290px] lg:max-w-sm relative">
               <a href="/blog/stories/vfx-where-talents-interests-collide" className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group h-[320px] lg:h-[460px] lg:h-[320px] lg:w-[320px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
-                  <Image width={100} height={100} alt='' src="/malibu.jpg" className="object-cover w-full h-full transition duration-300 transform rounded-xl group-hover:scale-110"/>
+                  <Image layout="fill" objectFit='cover' alt='' src="/dudesoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl group-hover:scale-110"/>
                 </div>
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
                   <h3 className="relative text-2xl"></h3>
                   <div className="relative font-normal mt-2.5">
-                    <p>VFX Art is Where My Talents and Interests Collide.</p>
+                    <p>We're changing product design at legacy companies.</p>
                   </div>
                 </div>
                 <button className="z-10 block relative flex items-center mt-6 pointer-events-none"  >
@@ -171,10 +175,14 @@ export default function Home() {
             <div className="ml-auto lg:mr-20 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
               <div   className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[256px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
-                  <Image width={100} height={100} alt='' src="/malibu.jpg" className="object-cover w-full h-full transition duration-300 transform rounded-xl"/>
+                  <Image layout="fill" objectFit='cover' alt='' src="/camoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl"/>
+                </div>
+                <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl"></h3>
+                  <h3 className="relative text-2xl">
+                    <p>I'm a first-gen MIT student, building biotech. </p>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -183,10 +191,14 @@ export default function Home() {
             <div className="lg:ml-80 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
               <div   className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[256px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
-                  <Image width={100} height={100} alt='' src="/malibu.jpg" className="object-cover w-full h-full transition duration-300 transform rounded-xl"/>
+                  <Image layout="fill" objectFit='cover' alt='' src="/mboa.jpg" className="w-full h-full transition duration-300 transform rounded-xl"/>
+                </div>
+                <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl"></h3>
+                  <h3 className="relative text-2xl">
+                    <p className='text-xl'>We're sisters redesigning inventory systems for SMBs.</p>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -202,9 +214,9 @@ export default function Home() {
             <div className='grid grid-rows-3 gap-8'>
               <div className='row-span-1 mt-4'>
                 <h2 className='text-3xl mb-4'>Who's here</h2>
-                <p className='text-xl mb-4'>Want to meet the OA students?</p>
+                <p className='text-xl mb-4'>Ready to introduce yourself to the OA students? </p>
                 <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
-                <button className='rounded-full buttline'>Yes, I do!</button>
+                <button className='rounded-full buttline'>Yes, I am!</button>
               </div>
               <div className='row-span-2' style={{position: 'relative', width: '100%', height: '100%'}}>
                 <Image src='/whohere.jpg' alt='' layout='fill' objectFit='cover' style={{borderRadius: 12}} />
