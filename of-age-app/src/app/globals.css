@@ -58,6 +58,15 @@ hr{
   object-fit: cover;
 }
 
+@media (min-width: 768px){
+  .wwdbox--container{
+    padding: 0 4rem;
+  }
+}
+.wwdbox--container{
+  padding: 0 8px;
+}
+
 .wwdbox{
   padding: 16px;
   background-color: var(--bgA2);
@@ -70,5 +79,16 @@ hr{
 
 .wwdbox.three{
   background-color: var(--secondary);
+}
+
+.wwdpics--container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wwdpics{
+  object-fit: cover;
+  border-radius: 12px;
 }
 

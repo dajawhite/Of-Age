@@ -9,26 +9,25 @@ import profile3 from './prof3oa_.jpg'
 export default function Home() {
   return (
     <main className='text-black '>
-      {/*header*/}
-      <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
+      <section style={{backgroundColor:"var(--bg)"}}>
         <nav className="hidden md:flex items-center justify-between px-8 pt-4">
-          <div className="flex space-x-4">
-            <a href="#" >About</a>
-            <a href="#" >How it works</a>
-            <a href="#" >Pricing</a>
-            <a href="#" >FAQ</a>
-          </div>
-          <div>
-            <Image src="/logo.png" alt="Logo" width={80} height={80} />
-          </div>
-          <div className="flex space-x-4 items-center">
-            <a href="#" >Blog</a>
-            <a href="#" >Contacts</a>
-            <button className="rounded-full butt">Log in</button>
-          </div>
-        </nav>
+            <div className="flex space-x-4">
+              <a href="#" >About</a>
+              <a href="#" >How it works</a>
+              <a href="#" >Pricing</a>
+              <a href="#" >FAQ</a>
+            </div>
+            <div>
+              <Image src="/logo.png" alt="Logo" width={80} height={80} />
+            </div>
+            <div className="flex space-x-4 items-center">
+              <a href="#" >Blog</a>
+              <a href="#" >Contacts</a>
+              <button className="rounded-full butt">Log in</button>
+            </div>
+          </nav>
 
-        <nav className='flex flex-row justify-between items-center'>
+        <nav className='md:hidden flex flex-row justify-between items-center'>
           <div>
             <Image src="/logo.png" alt="Logo" width={80} height={80} />
           </div>
@@ -37,53 +36,58 @@ export default function Home() {
             <button className="rounded-full butt">Log in</button>
           </div>
         </nav>
+      </section>
 
-        <div className='mt-8 text-left'>
-          <h1 className='text-6xl'>The only community for tech students.</h1>
-          <hr className='mt-8'></hr>
-        </div>
-
-        <div className='mt-8 flex -space-x-2 overflow-hidden'>
-          <Image
-            className="inline-block h-12 w-12 rounded-full pics"
-            src={profile1}
-            alt=""
-          />
-          <Image
-            className="inline-block h-12 w-12 rounded-full pics"
-            src={profile3}
-            alt=""
-          />
-          <Image
-            className="inline-block h-12 w-12 rounded-full pics"
-            src={profile2}
-            alt=""
-          />
-        </div>
-
-        <div className='mt-8'>
-          <h2 className=''>JOIN OUR 150K+ COMMUNITY OF STUDENTS</h2>
-          <button className='rounded-full mt-2 butt'>Get Started</button>
-        </div>
-
-        <div className='mt-8'>
-        <Image src="/communityoa.jpg" alt="Logo" width={350} height={80} className='pics' style={{borderRadius: 5}}/>
-        </div>
-
-        <div className='mt-5'>
-          <div className='hidden'>
-            <Image className='pics'src={headerPic} width={200} height={200} alt='' style={{borderRadius: 5}}></Image>
+      {/*header*/}
+      <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
+        <div className='grid grid-cols-6 grid-flow-col md:grid-cols-12 px-5'>
+          {/* LHS text */}
+          <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto lg:col-end-6 md:row-start-1 justify-evenly items-left text-left'>
+            <div>
+              <h1 className='text-6xl'>The only community for tech students.</h1>
+              <hr className='mt-8'></hr>
+            </div>
+            <div className='flex -space-x-2 overflow-hidden'>
+              <Image
+                className="inline-block h-12 w-12 rounded-full pics"
+                src={profile1}
+                alt=""
+              />
+              <Image
+                className="inline-block h-12 w-12 rounded-full pics"
+                src={profile3}
+                alt=""
+              />
+              <Image
+                className="inline-block h-12 w-12 rounded-full pics"
+                src={profile2}
+                alt=""
+              />
+            </div>
+            <div className=''>
+              <h2 className=''>JOIN OUR 150K+ COMMUNITY OF STUDENTS</h2>
+              <button className='rounded-full mt-2 butt'>Get Started</button>
+            </div>
           </div>
-          <div className=''>
-            <h2 className='mb-2'>We connect students who are breaking into tech and passionate about new ways of learning.</h2>
-            <div className='flex justify-center mt-4'>
-              <button className='rounded-full butt'>iMessage</button>
-              <button className='rounded-full butt'>Twitter</button>
-              <button className='rounded-full butt'>Instagram</button>
+          {/* RHS text */}
+          <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-auto md:col-start-7 md:col-end-13 md:row-start-1 justify-evenly items-center aspect-square'>
+            <div>
+              <Image src="/communityoa.jpg" alt="Logo" width={350} height={80} className='pics' style={{borderRadius: 5}}/>
+            </div>
+            <div className='hidden'>
+              <Image className='pics'src={headerPic} width={200} height={200} alt='' style={{borderRadius: 5}}></Image>
+            </div>
+            <div className=''>
+              <h2 className='mb-2'>We connect students who are breaking into tech and passionate about new ways of learning.</h2>
+              <div className='flex justify-center mt-4'>
+                <button className='rounded-full butt'>iMessage</button>
+                <button className='rounded-full butt'>Twitter</button>
+                <button className='rounded-full butt'>Instagram</button>
+              </div>
             </div>
           </div>
         </div>
-        <hr className='hidden mt-5'></hr>
+        <hr className='hidden md:block mt-5'></hr>
       </section>
 
       {/*articles*/}
@@ -100,7 +104,7 @@ export default function Home() {
           <div className="max-w-6xl px-6 mx-auto px-4 pb-16 mx-auto space-y-16 lg:px-0 lg:space-y-0 lg:pb-[100vh]">
             {/*image 1*/}
             <div className="lg:ml-40 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
-              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[256px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
+              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[400px]  lg:w-[390px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout='fill' objectFit='cover' alt='' src="/paytonoa.jpg"  className="w-full h-full rounded-xl" />
                 </div>
@@ -173,7 +177,7 @@ export default function Home() {
 
             {/*image 4 */}
             <div className="ml-auto lg:mr-20 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
-              <div   className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[256px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
+              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[320px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout="fill" objectFit='cover' alt='' src="/camoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl"/>
                 </div>
@@ -188,8 +192,8 @@ export default function Home() {
             </div>
 
             {/*image 5*/}
-            <div className="lg:ml-80 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
-              <div   className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[256px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
+            <div className="lg:ml-20 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
+              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[320px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout="fill" objectFit='cover' alt='' src="/mboa.jpg" className="w-full h-full transition duration-300 transform rounded-xl"/>
                 </div>
@@ -202,50 +206,67 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
       {/*what we do*/}
-      <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
-        <div className='grid grid-rows-6 gap-6'>
-          <div className='row-span-2 wwdbox'>
-            <div className='grid grid-rows-3 gap-8'>
-              <div className='row-span-1 mt-4'>
-                <h2 className='text-3xl mb-4'>Who's here</h2>
-                <p className='text-xl mb-4'>Ready to introduce yourself to the OA students? </p>
-                <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
-                <button className='rounded-full buttline'>Yes, I am!</button>
+      <section className='p-4 overflow-hidden space-y-7' style={{backgroundColor:"var(--bg)"}}>
+        <div className='wwdbox--container'>
+          <div className='wwdbox'>
+            <div className='grid grid-cols-6 gap-y-8 grid-flow-col md:grid-cols-12 md:gap-y-12'>
+              <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container'>
+                <div>
+                  <Image className='wwdpics' src='/whohere.jpg' alt='' layout='fill'/>
+                </div>
               </div>
-              <div className='row-span-2' style={{position: 'relative', width: '100%', height: '100%'}}>
-                <Image src='/whohere.jpg' alt='' layout='fill' objectFit='cover' style={{borderRadius: 12}} />
-              </div>
-            </div>
-          </div>
-          <div className='row-span-2 wwdbox two'>
-            <div className='grid grid-rows-3 gap-8'>
-              <div className='row-span-1 mt-4'>
-                <h2 className='text-3xl mb-4'>What's being built</h2>
-                <p className='text-xl mb-4'>Your first-hand student founder source. </p>
-                <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
-                <button className='rounded-full buttline'>See the products</button>
-              </div>
-              <div className='row-span-2' style={{position: 'relative', width: '100%', height: '100%'}}>
-                <Image src='/beingbuilt.jpg' alt='' layout='fill' objectFit='cover' style={{borderRadius: 12}} />
+              <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-auto md:col-start-2 md:col-end-7 lg:col-end-6 md:row-start-1 justify-around items-center text-left'>
+                <div>
+                  <h2 className='text-3xl mb-4'>Who's here</h2>
+                  <p className='text-xl mb-4'>Ready to introduce yourself to the OA students?</p>
+                  <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
+                  <button className='rounded-full buttline'>Yes, I am!</button>
+                </div>
               </div>
             </div>
           </div>
-          <div className='row-span-2 wwdbox three'>
-            <div className='grid grid-rows-3 gap-8'>
-              <div className='row-span-1 mt-4'>
-                <h2 className='text-3xl mb-4'>Events</h2>
-                <p className='text-xl mb-4'>Join our in-person events...we don't do that virtual stuff.</p>
-                <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
-                <button className='rounded-full buttline' style={{color:'black'}} >Find or plan one</button>
+        </div>
+
+        <div className='wwdbox--container'>
+          <div className='wwdbox two'>
+            <div className='grid grid-cols-6 gap-y-8 grid-flow-col md:grid-cols-12 md:gap-y-12'>
+              <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container'>
+                <div>
+                  <Image className='wwdpics' src='/beingbuilt.jpg' alt='' layout='fill'/>
+                </div>
               </div>
-              <div className='row-span-2' style={{position: 'relative', width: '100%', height: '100%'}}>
-                <Image src='/events.jpg' alt='' layout='fill' objectFit='cover' style={{borderRadius: 12}} />
+              <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-auto md:col-start-2 md:col-end-7 lg:col-end-6 md:row-start-1 justify-around items-center text-left'>
+                <div>
+                  <h2 className='text-3xl mb-4'>What's being built</h2>
+                  <p className='text-xl mb-4'>Your first-hand student founder source...don't be shy.</p>
+                  <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
+                  <button className='rounded-full buttline'>See the products</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='wwdbox--container'>
+          <div className='wwdbox three'>
+            <div className='grid grid-cols-6 gap-y-8 grid-flow-col md:grid-cols-12 md:gap-y-12'>
+              <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container'>
+                <div>
+                  <Image className='wwdpics' src='/events.jpg' alt='' layout='fill'/>
+                </div>
+              </div>
+              <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-auto md:col-start-2 md:col-end-7 lg:col-end-6 md:row-start-1 justify-around items-center text-left'>
+                <div>
+                  <h2 className='text-3xl mb-4'>Events</h2>
+                  <p className='text-xl mb-4'>Join our in-person events...we don't do that virtual stuff.</p>
+                  <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
+                  <button className='rounded-full buttline'>Find or plan one</button>
+                </div>
               </div>
             </div>
           </div>
