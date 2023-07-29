@@ -35,6 +35,13 @@ body {
   color: white;
 }
 
+.socialbutt{
+  padding: 10px;
+  margin-right: 10px;
+  background-color: var(--primary);
+  color: white;
+}
+
 .buttline{
   padding: 10px;
   border-color: var(--primary);
@@ -49,7 +56,7 @@ hr{
 
 .social-box{
   padding: 16px;
-  border-radius: 5px;
+  border-radius: 16px;
   background-color: var(--cta);
   color: white;
 }
@@ -92,3 +99,11 @@ hr{
   border-radius: 12px;
 }
 
+.dropdown-butt:active + .dropdown-content{
+  display:block;
+}
+
+.socialpics--container{
+  position: relative;
+  height: 12rem;
+}
