@@ -3,6 +3,7 @@ import headerPic from './backpacking.jpg'
 import profile1 from './prof1oa.jpg'
 import profile2 from './prof2oa.jpg'
 import profile3 from './prof3oa_.jpg'
+import NavBar from '../components/NavBar'
 
 
 
@@ -10,33 +11,12 @@ export default function Home() {
   return (
     <main className='text-black '>
       <section className="p-4" style={{backgroundColor:"var(--bg)"}}>
-        <nav className="hidden md:flex items-center justify-between px-8 pt-4">
-            <div className="flex space-x-4">
-              <a href="#" >About</a>
-              <a href="#" >How it works</a>
-              <a href="#" >Pricing</a>
-              <a href="#" >FAQ</a>
-            </div>
-            <div>
-              <Image src="/logo.png" alt="Logo" width={80} height={80} />
-            </div>
-            <div className="flex space-x-4 items-center">
-              <a href="#" >Blog</a>
-              <a href="#" >Contacts</a>
-              <button className="rounded-full butt">Log in</button>
-            </div>
-        </nav>
-
-        <nav className='md:hidden flex flex-row justify-between items-center'>
-          <div>
-            <Image src="/logo.png" alt="Logo" width={80} height={80} />
-          </div>
-          <div className="space-x-3 relative">
-            <a href="#" className='dropdown-butt' >More</a>
-            <button className="rounded-full butt">Log in</button>
-          </div>
-        </nav>
+        <NavBar></NavBar>
+        <hr className='hidden md:block mt-5'></hr>
       </section>
+
+      
+
 
       {/*header*/}
       <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
@@ -70,7 +50,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-row col-start-1 col-end-7 row-start-3 row-end-auto lg:col-end-7 md:row-start-2 items-center text-left mt-4 social-box p-4 sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+          <div className="flex flex-row col-start-1 col-end-7 row-start-3 row-end-auto lg:col-end-7 md:row-start-2 items-center text-left md:mt-4 mt-8 social-box p-4 sm:px-6 sm:pt-8 md:p-6 lg:p-8">
               <div className="grid grid-cols-1 items-center gap-x-6 gap-y-6 sm:grid-cols-12 justify-center	">
                 <div className="aspect-square overflow-hidden hidden md:block rounded-lg sm:col-span-2 lg:col-span-3">
                   <Image src={headerPic} alt="" width={300} height={300} className="object-cover object-center"/>
@@ -87,7 +67,7 @@ export default function Home() {
           </div>
 
           {/* RHS image */}
-          <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-3 md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container md:ml-4'>
+          <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-3 md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container md:ml-4 mt-4 md:mt-0'>
             <div>
               <Image src="/communityoa.jpg" alt="Logo" layout='fill' className='wwdpics'/>
             </div>
