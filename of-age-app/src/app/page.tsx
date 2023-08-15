@@ -15,9 +15,6 @@ export default function Home() {
         <hr className='hidden md:block mt-5'></hr>
       </section>
 
-      
-
-
       {/*header*/}
       <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
         <div className='grid grid-cols-6 md:grid-cols-12 md:px-4'>
