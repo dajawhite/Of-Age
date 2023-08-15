@@ -10,69 +10,27 @@ import NavBar from '../components/NavBar'
 export default function Home() {
   return (
     <main className='text-black '>
-      <section className="p-4" style={{backgroundColor:"var(--bg)"}}>
+      <section>
         <NavBar></NavBar>
-        <hr className='hidden md:block mt-5'></hr>
       </section>
 
       {/*header*/}
-      <section className='p-4 overflow-hidden' style={{backgroundColor:"var(--bg)"}}>
-        <div className='grid grid-cols-6 md:grid-cols-12 md:px-4'>
-          {/* LHS text */}
-          <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto lg:col-end-7 md:row-start-1 items-left text-left space-y-8'>
-            <div>
-              <h1 className='text-6xl'>The only community for tech students.</h1>
-              <hr className='mt-8'></hr>
-            </div>
-            <div className='flex -space-x-2 overflow-hidden'>
-              <Image
-                className="inline-block h-12 w-12 rounded-full pics"
-                src={profile1}
-                alt=""
-              />
-              <Image
-                className="inline-block h-12 w-12 rounded-full pics"
-                src={profile3}
-                alt=""
-              />
-              <Image
-                className="inline-block h-12 w-12 rounded-full pics"
-                src={profile2}
-                alt=""
-              />
-            </div>
-            <div>
-              <h2 className=''>JOIN OUR 150K+ COMMUNITY OF STUDENTS</h2>
-              <button className='rounded-full mt-2 butt'>Get Started</button>
-            </div>
+      <section className='justify-center flex flex-col items-center pt-28 pb-24'>
+        <div className='flex flex-col justify-center px-6'>
+          <div className='mb-16 flex flex-col items-center'>
+            <h1 className='text-8xl text-center leading-loose'>
+              Share your incredible <br/> stories  - your way.
+            </h1>
+
+          </div>
+          <div className='flex flex-col items-center'>
+            <p className='text-2xl text-center leading-loose'>
+              Post the stories you are passionate about, short or long. <br/> Create photo updates, vlogs, articles or even books.
+            </p>
           </div>
 
-          <div className="flex flex-row col-start-1 col-end-7 row-start-3 row-end-auto lg:col-end-7 md:row-start-2 items-center text-left md:mt-4 mt-8 social-box p-4 sm:px-6 sm:pt-8 md:p-6 lg:p-8">
-              <div className="grid grid-cols-1 items-center gap-x-6 gap-y-6 sm:grid-cols-12 justify-center	">
-                <div className="aspect-square overflow-hidden hidden md:block rounded-lg sm:col-span-2 lg:col-span-3">
-                  <Image src={headerPic} alt="" width={300} height={300} className="object-cover object-center"/>
-                </div>
-                <div className="flex flex-col items-center md:items-start sm:col-span-8 lg:col-span-9">
-                  <h2 className="">We connect students who are breaking into tech and passionate about new ways of learning.</h2>
-                  <div className='mt-4'>
-                    <button className='rounded-full socialbutt'>iMessage</button>
-                    <button className='rounded-full socialbutt'>Twitter</button>
-                    <button className='rounded-full socialbutt'>Instagram</button>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-          {/* RHS image */}
-          <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-3 md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container md:ml-4 mt-4 md:mt-0'>
-            <div>
-              <Image src="/communityoa.jpg" alt="Logo" layout='fill' className='wwdpics'/>
-            </div>
-          </div>
-          
-          
         </div>
-        <hr className='hidden md:block mt-5'></hr>
+        
       </section>
 
       {/*articles*/}
