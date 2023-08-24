@@ -4,33 +4,18 @@ import profile1 from './prof1oa.jpg'
 import profile2 from './prof2oa.jpg'
 import profile3 from './prof3oa_.jpg'
 import NavBar from '../components/NavBar'
+import Hero from '../components/Hero'
+
 
 
 
 export default function Home() {
   return (
     <main className='text-black '>
-      <section>
-        <NavBar></NavBar>
-      </section>
 
       {/*header*/}
-      <section className='justify-center flex flex-col items-center pt-28 pb-24'>
-        <div className='flex flex-col justify-center px-6'>
-          <div className='mb-16 flex flex-col items-center'>
-            <h1 className='text-8xl text-center leading-loose'>
-              Share your incredible <br/> stories  - your way.
-            </h1>
-
-          </div>
-          <div className='flex flex-col items-center'>
-            <p className='text-2xl text-center leading-loose'>
-              Post the stories you are passionate about, short or long. <br/> Create photo updates, vlogs, articles or even books.
-            </p>
-          </div>
-
-        </div>
-        
+      <section className='h-screen'>
+        <Hero></Hero>
       </section>
 
       {/*articles*/}
