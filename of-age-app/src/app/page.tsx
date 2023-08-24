@@ -19,7 +19,7 @@ export default function Home() {
       </section>
 
       {/*articles*/}
-      <section style={{backgroundColor:"var(--bg)"}}>
+      <section>
         <div className="relative z-10">
           {/*large text */}
           <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center">
