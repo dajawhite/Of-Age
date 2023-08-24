@@ -109,6 +109,20 @@ hr{
   height: 12rem;
 }
 
+.image-container {
+  width: 400px; 
+  height: 500px; 
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
 /*unbench*/
 .oa-nav {
   border-bottom-right-radius: 10px;
