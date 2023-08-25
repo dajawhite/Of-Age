@@ -56,6 +56,8 @@ body {
 hr{
   border-color: black;
   border-style: dotted;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .social-box{
@@ -260,8 +262,8 @@ hr{
   line-height: 1.15;
   position: absolute;
   top: auto;
-  bottom: 14px;
-  left: 22px;
+  bottom: 30px;
+  left: 40px;
   right: auto;
   z-index:1;
 
@@ -302,7 +304,7 @@ hr{
 .book-list {
   float: left;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 45px;
   transition: transform .3s;
   display: flex
 }
@@ -316,7 +318,6 @@ hr{
 }
 
 .collections-wrap {
-  margin-bottom: 16px;
   margin-left: -64px;
   margin-right: -48px;
   position: relative
@@ -480,7 +481,7 @@ hr{
     text-align: left;
   }
 
-  .collections-wrap {
+  .collections-wrap { 
     margin-bottom: 0;
     margin-left: -26px;
     margin-right: -26px
@@ -496,3 +497,11 @@ hr{
   }
 }
 
+.bg-aqua {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 255 224 / var(--tw-bg-opacity));
+}
+
+.arrows{
+  padding-left: 52px;
+}

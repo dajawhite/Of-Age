@@ -1,9 +1,15 @@
 import Image from 'next/image'
 import Hero from '../components/Hero'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <main className='text-black '>
+      <Head>
+        <script src="/arrows.js"></script>
+      </Head>
+
+      
 
       {/* header */}
       <section className='h-screen'>
@@ -130,7 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/*what we do*/}
+      {/* what we do */}
       <section className='h-screen'>
         <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-16 px-16">
           <h1 className='text-5xl'>Residences</h1>
@@ -140,60 +146,168 @@ export default function Home() {
           </div>
         </div>
         <div className="main"> 
-            <div className="main-wrap">
-                {/*showcase parts*/}
-                <div className="collections-wrap over" data-aos="fade-left">
-                    {/*workbooks*/}
-                    <div id="pnProductNav" className="book-collection-wrap" data-overflowing="none">
-                        <div id="pnProductNavContents" className="book-list">
-                          {/*mastercard*/}
-                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
-                            <h3 className='book-cover-title'>Mastercard</h3>
-                            <img src="/belmont.jpg" loading="lazy" />
-
-                            <div className='uni-cards py-8 pl-8 pr-12'>
-                              <div className='space-y-4'>
-                                <h3 className='text-2xl font-semibold'>Building A</h3>
-                                <p>Mixed-use <br/>500 W. Broad St.</p>
-                                <p>Gravity's original mixed-use residence. Equipped with studio, one, and two-bedroom apartments, and signature amenities including an outdoor movie wall and programming based on wellness.</p>
-                              </div>
-                              <div className='mt-12'>
-                                <hr/>
-                                <div className='flex flex-row'>
-                                  <p className=''><a className='button rounded-full buttline'>Explore</a></p>
-                                  <p className=''><a className='button rounded-full buttline'>Availability</a></p>
-                                  <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
-                                </div>
-                              </div>
-                              
-                            </div>
-                          </div>
-                          {/*mastercard*/}
-                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
-                            <h3 className="book-cover-title">Mastercard</h3>
-                            <img src="/notredame.jpg" loading="lazy" />
-                          </div>
-                          {/*mastercard*/}    
-                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
-                            <h3 className="book-cover-title">Mastercard</h3>
-                            <img src="/oxford.jpg" loading="lazy" />
-                          </div>
-                          {/*mastercard*/}    
-                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
-                            <h3 className="book-cover-title">Mastercard</h3>
-                            <img src="/harvard.jpg" loading="lazy" />
-                          </div>
-                          {/*mastercard*/}    
-                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
-                            <h3 className="book-cover-title">Mastercard</h3>
-                            <img src="/montana.jpg" loading="lazy" />
-                          </div>
-                        </div>
+          <div className="main-wrap">
+            {/*showcase parts*/}
+            <div className="collections-wrap over" data-aos="fade-left">
+                {/*workbooks*/}
+              <div id="pnProductNav" className="book-collection-wrap" data-overflowing="none">
+                <div id="pnProductNavContents" className="book-list">
+                  {/*belmont*/}
+                  <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
+                    <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
+                      <h3 className='book-cover-title'>Belmont University</h3>
                     </div>
+                    <img src="/belmont.jpg" />
+                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                      <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
+                      </div>
+                      <h2 className='text-lg'>Now Leasing</h2>
+                    </div>
+                    <div className='uni-cards py-8 pl-8 pr-12'>
+                      <div className='space-y-4'>
+                        <h3 className='text-2xl font-semibold'>Building A</h3>
+                        <p>Mixed-use<br/>500 W. Broad St.</p>
+                        <p>Gravity's original mixed-use residence. Equipped with studio, one, and two-bedroom apartments, and signature amenities including an outdoor movie wall and programming based on wellness.</p>
+                      </div>
+                      <div className='mt-12'>
+                        <hr />
+                        <div className='flex flex-row space-x-2'>
+                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  {/*harvard*/}
+                  <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
+                    <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
+                      <h3 className='book-cover-title'>Harvard University</h3>
+                    </div>
+                    <img src="/harvard.jpg" />
+                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                      <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
+                      </div>
+                      <h2 className='text-lg'>Now Leasing</h2>
+                    </div>
+                    <div className='uni-cards py-8 pl-8 pr-12'>
+                      <div className='space-y-4'>
+                        <h3 className='text-2xl font-semibold'>Building A</h3>
+                        <p>Mixed-use<br/>500 W. Broad St.</p>
+                        <p>Gravity's original mixed-use residence. Equipped with studio, one, and two-bedroom apartments, and signature amenities including an outdoor movie wall and programming based on wellness.</p>
+                      </div>
+                      <div className='mt-12'>
+                        <hr />
+                        <div className='flex flex-row space-x-2'>
+                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  {/*notre dame*/}    
+                  <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
+                    <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
+                      <h3 className='book-cover-title'>University of Notre Dame</h3>
+                    </div>
+                    <img src="/notredame.jpg" />
+                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                      <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
+                      </div>
+                      <h2 className='text-lg'>Now Leasing</h2>
+                    </div>
+                    <div className='uni-cards py-8 pl-8 pr-12'>
+                      <div className='space-y-4'>
+                        <h3 className='text-2xl font-semibold'>Building A</h3>
+                        <p>Mixed-use<br/>500 W. Broad St.</p>
+                        <p>Gravity's original mixed-use residence. Equipped with studio, one, and two-bedroom apartments, and signature amenities including an outdoor movie wall and programming based on wellness.</p>
+                      </div>
+                      <div className='mt-12'>
+                        <hr />
+                        <div className='flex flex-row space-x-2'>
+                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  {/*oxford*/}    
+                  <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
+                    <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
+                      <h3 className='book-cover-title'>Oxford University</h3>
+                    </div>
+                    <img src="/oxford.jpg" />
+                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                      <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
+                      </div>
+                      <h2 className='text-lg'>Now Leasing</h2>
+                    </div>
+                    <div className='uni-cards py-8 pl-8 pr-12'>
+                      <div className='space-y-4'>
+                        <h3 className='text-2xl font-semibold'>Building A</h3>
+                        <p>Mixed-use<br/>500 W. Broad St.</p>
+                        <p>Gravity's original mixed-use residence. Equipped with studio, one, and two-bedroom apartments, and signature amenities including an outdoor movie wall and programming based on wellness.</p>
+                      </div>
+                      <div className='mt-12'>
+                        <hr />
+                        <div className='flex flex-row space-x-2'>
+                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  {/*montana*/}    
+                  <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
+                    <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
+                      <h3 className='book-cover-title'>University of Montana</h3>
+                    </div>
+                    <img src="/montana.jpg" />
+                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                      <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
+                        <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
+                      </div>
+                      <h2 className='text-lg'>Now Leasing</h2>
+                    </div>
+                    <div className='uni-cards py-8 pl-8 pr-12'>
+                      <div className='space-y-4'>
+                        <h3 className='text-2xl font-semibold'>Building A</h3>
+                        <p>Mixed-use<br/>500 W. Broad St.</p>
+                        <p>Gravity's original mixed-use residence. Equipped with studio, one, and two-bedroom apartments, and signature amenities including an outdoor movie wall and programming based on wellness.</p>
+                      </div>
+                      <div className='mt-12'>
+                        <hr />
+                        <div className='flex flex-row space-x-2'>
+                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
+                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div className='flex flex-row'>
-              {/*left arrow*/}
+          </div>
+          <div className='flex flex-row arrows'>
+            {/*left arrow*/}
             <div className="">
                 <div id="advancer-left" className="collections-nav-button collections-nav-button--left">
                     <div className="collections-arrow-icon"><svg width="8" height="14" viewBox="0 0 8 14"
@@ -205,8 +319,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            
-              {/*right arrow*/}
+            {/*right arrow*/}
             <div className="">
               <div id="advancer-right" className="collections-nav-button">
                   <div className="collections-arrow-icon"><svg width="8" height="14" viewBox="0 0 8 14"
@@ -218,8 +331,7 @@ export default function Home() {
                   </div>
               </div>
             </div>
-            </div>
-            
+          </div>
         </div>
       </section>
 
