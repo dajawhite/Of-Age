@@ -44,15 +44,18 @@ body {
 }
 
 .buttline{
-  padding: 10px;
-  border-color: var(--primary);
-  border: 1px solid var(--primary);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 9px;
+  border: 1px solid black;
   color: black;
 }
 
 
 hr{
   border-color: black;
+  border-style: dotted;
 }
 
 .social-box{
@@ -164,3 +167,332 @@ hr{
 .primtext{
   color: var(--primary);
 }
+
+[data-overflowing="both"]~.collections-nav-gradient--left,
+[data-overflowing="left"]~.collections-nav-gradient--left {
+    opacity: 1;
+}
+
+[data-overflowing="both"]~.collections-nav-gradient--right,
+[data-overflowing="right"]~.collections-nav-gradient--right {
+    opacity: 1;
+}
+
+.collections-nav-gradient {
+    pointer-events: none;
+}
+
+.collections-nav-button {
+    pointer-events: auto;
+}
+
+.arrow, .arrow-right {
+  position: relative;
+}
+.no-wrap {
+  white-space: nowrap;
+}
+.arrow::after, .arrow-right::after {
+  content: "→";
+  pointer-events: none;
+  display: inline-block;
+  margin-left: 0.25em;
+  transition: transform var(--duration-quick) var(--easing-sharp);
+}
+
+.main-nav {
+  width: 320px;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: auto
+}
+
+.main-nav-head{
+  margin-top: 40px;
+}
+
+.main {
+  flex-direction: column;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: flex
+}
+
+.main-wrap{
+  padding: 0px 48px 0px 64px;
+}
+
+.book-wrap {
+  width: 295px;
+  perspective: 800px;
+  perspective-origin: 100%;
+  display: block;
+  position: relative
+}
+
+.book-wrap.book-wrap--collection-page {
+  z-index: 100;
+  width: 100%
+}
+
+.book-cover {
+  z-index: 4;
+  transform-origin: 0%;
+  position: relative;
+  overflow: hidden;
+  transform: none;  
+}
+
+.book-cover-title {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 39px;
+  font-size: 20px;
+  line-height: 1.15;
+  position: absolute;
+  top: auto;
+  bottom: 14px;
+  left: 22px;
+  right: auto;
+  z-index:1;
+
+}
+
+
+.book-item {
+  perspective: 1000px;
+  margin-right: 32px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.uni-cards {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 24px; /* Span the card across the entire width of the parent */
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  opacity: 0; /* Initially set to invisible */
+  transition: opacity 0.3s; /* Smooth fade-in effect */
+  pointer-events: none; /* Ensure the card doesn't interfere with hover effect when mouse moves off it */
+  border-radius: 0 20px 0 20px;
+}
+
+.book-item:hover .uni-cards {
+  opacity: 1; /* Make the card visible upon hover */
+}
+
+.book-item:hover .book-cover-title {
+  opacity: 0; /* Make the card visible upon hover */
+}
+
+.book-item img{
+  object-fit: contain;
+}
+
+.book-list {
+  float: left;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  transition: transform .3s;
+  display: flex
+}
+
+.scroll-bar-blocker {
+  z-index: 1;
+  height: 24px;
+  background-color: #000;
+  margin-top: -18px;
+  position: relative
+}
+
+.collections-wrap {
+  margin-bottom: 16px;
+  margin-left: -64px;
+  margin-right: -48px;
+  position: relative
+}
+
+.book-collection-wrap {
+  margin-top: -40px;
+  padding-left: 64px;
+  padding-right: 16px;
+  overflow: auto
+}
+
+.collections-nav-button {
+  width: 40px;
+  height: 40px;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2px;
+  transition: background-color .2s;
+  display: flex;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, .04);
+}
+
+.collections-nav-button:hover {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.collections-nav-button.collections-nav-button--left {
+  transform: rotate(-180deg)
+}
+
+.collections-arrow-icon {
+  width: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex
+}
+
+
+
+@media (min-width: 992px){
+  .overview-subheading {
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 24px;
+    line-height: 2.5rem;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .main-nav {
+    width: 100%;
+    align-items: center;
+    position: static
+  }
+
+  .main {
+    min-height: 0;
+    margin-left: 0;
+    padding-right: 0;
+    display: block
+  }
+
+  .collections-nav-gradient {
+    border-radius: 32px;
+  }
+
+  .main-nav-head {
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 62px;
+    display: flex
+  }
+
+  .overview-header-logo {
+    margin-left: 14px;
+  }
+
+  .overview-heading {
+    font-size: 4rem;
+    line-height: 59px
+  }
+
+  .overview-subheading {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .book-wrap {
+    width: 190px
+  }
+
+  .book-cover-title {
+    font-size: 18px
+  }
+
+  .book-page {
+    font-size: 6.1px
+  }
+
+  .collections-wrap {
+    margin-left: -40px;
+    margin-right: -40px
+  }
+
+  .book-collection-wrap {
+    padding-left: 40px;
+    padding-right: 6px
+  }
+}
+
+@media screen and (max-width:767px) {
+  .main-inner {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px
+  }
+
+  .main-nav-head {
+    max-width: 250px
+  }
+
+  .overview-heading {
+    font-size: 4rem;
+    line-height: 48px
+  }
+
+  .overview-subheading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .book-wrap {
+    width: 175px
+  }
+
+  .book-cover-title {
+    padding-right: 13px;
+    font-size: 16px;
+    bottom: 10px;
+    left: 14px
+  }
+
+  .book-page {
+    font-size: 4.7px
+  }
+}
+
+@media screen and (max-width:479px) {
+  .book-item {
+    padding-right: 22px
+  }
+
+  .overview-subheading{
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .collections-wrap {
+    margin-bottom: 0;
+    margin-left: -26px;
+    margin-right: -26px
+  }
+
+  .book-collection-wrap {
+    margin-top: -60px;
+    padding-left: 26px
+  }
+
+  .collections-nav-gradient {
+    display: none
+  }
+}
+

@@ -1,24 +1,16 @@
 import Image from 'next/image'
-import headerPic from './backpacking.jpg'
-import profile1 from './prof1oa.jpg'
-import profile2 from './prof2oa.jpg'
-import profile3 from './prof3oa_.jpg'
-import NavBar from '../components/NavBar'
 import Hero from '../components/Hero'
-
-
-
 
 export default function Home() {
   return (
     <main className='text-black '>
 
-      {/*header*/}
+      {/* header */}
       <section className='h-screen'>
         <Hero></Hero>
       </section>
 
-      {/*articles*/}
+      {/* articles */}
       <section>
         <div className="relative z-10">
           {/*large text */}
@@ -139,68 +131,99 @@ export default function Home() {
       </section>
 
       {/*what we do*/}
-      <section className='p-4 overflow-hidden space-y-7' style={{backgroundColor:"var(--bg)"}}>
-        <div className='wwdbox--container'>
-          <div className='wwdbox'>
-            <div className='grid grid-cols-6 gap-y-8 grid-flow-col md:grid-cols-12 md:gap-y-12'>
-              <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container'>
-                <div>
-                  <Image className='wwdpics' src='/whohere.jpg' alt='' layout='fill'/>
-                </div>
-              </div>
-              <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-auto md:col-start-2 md:col-end-7 lg:col-end-6 md:row-start-1 justify-around items-center text-left'>
-                <div>
-                  <h2 className='text-3xl mb-4'>Who's here</h2>
-                  <p className='text-xl mb-4'>Ready to introduce yourself to the OA students?</p>
-                  <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
-                  <button className='rounded-full buttline'>Yes, I am!</button>
-                </div>
-              </div>
-            </div>
+      <section className='h-screen'>
+        <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-16 px-16">
+          <h1 className='text-5xl'>Residences</h1>
+          <div className='text-2xl pr-10 space-y-4'>
+            <p>From shared living to luxury tower living, Gravity offers residential spaces that are as individual as you are.</p>
+            <p className=''><a className='button rounded-full buttline'>Explore</a></p>
           </div>
         </div>
+        <div className="main"> 
+            <div className="main-wrap">
+                {/*showcase parts*/}
+                <div className="collections-wrap over" data-aos="fade-left">
+                    {/*workbooks*/}
+                    <div id="pnProductNav" className="book-collection-wrap" data-overflowing="none">
+                        <div id="pnProductNavContents" className="book-list">
+                          {/*mastercard*/}
+                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
+                            <h3 className='book-cover-title'>Mastercard</h3>
+                            <img src="/belmont.jpg" loading="lazy" />
 
-        <div className='wwdbox--container'>
-          <div className='wwdbox two'>
-            <div className='grid grid-cols-6 gap-y-8 grid-flow-col md:grid-cols-12 md:gap-y-12'>
-              <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container'>
-                <div>
-                  <Image className='wwdpics' src='/beingbuilt.jpg' alt='' layout='fill'/>
+                            <div className='uni-cards py-8 pl-8 pr-12'>
+                              <div className='space-y-4'>
+                                <h3 className='text-2xl font-semibold'>Building A</h3>
+                                <p>Mixed-use <br/>500 W. Broad St.</p>
+                                <p>Gravity's original mixed-use residence. Equipped with studio, one, and two-bedroom apartments, and signature amenities including an outdoor movie wall and programming based on wellness.</p>
+                              </div>
+                              <div className='mt-12'>
+                                <hr/>
+                                <div className='flex flex-row'>
+                                  <p className=''><a className='button rounded-full buttline'>Explore</a></p>
+                                  <p className=''><a className='button rounded-full buttline'>Availability</a></p>
+                                  <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                          {/*mastercard*/}
+                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
+                            <h3 className="book-cover-title">Mastercard</h3>
+                            <img src="/notredame.jpg" loading="lazy" />
+                          </div>
+                          {/*mastercard*/}    
+                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
+                            <h3 className="book-cover-title">Mastercard</h3>
+                            <img src="/oxford.jpg" loading="lazy" />
+                          </div>
+                          {/*mastercard*/}    
+                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
+                            <h3 className="book-cover-title">Mastercard</h3>
+                            <img src="/harvard.jpg" loading="lazy" />
+                          </div>
+                          {/*mastercard*/}    
+                          <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden">  
+                            <h3 className="book-cover-title">Mastercard</h3>
+                            <img src="/montana.jpg" loading="lazy" />
+                          </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-auto md:col-start-2 md:col-end-7 lg:col-end-6 md:row-start-1 justify-around items-center text-left'>
-                <div>
-                  <h2 className='text-3xl mb-4'>What's being built</h2>
-                  <p className='text-xl mb-4'>Your first-hand student founder source...don't be shy.</p>
-                  <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
-                  <button className='rounded-full buttline'>See the products</button>
+            </div>
+            <div className='flex flex-row'>
+              {/*left arrow*/}
+            <div className="">
+                <div id="advancer-left" className="collections-nav-button collections-nav-button--left">
+                    <div className="collections-arrow-icon"><svg width="8" height="14" viewBox="0 0 8 14"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893C0.683418 -0.0976314 1.31658 -0.0976314 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
                 </div>
+            </div>
+            
+              {/*right arrow*/}
+            <div className="">
+              <div id="advancer-right" className="collections-nav-button">
+                  <div className="collections-arrow-icon"><svg width="8" height="14" viewBox="0 0 8 14"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976309 1.31658 -0.0976309 0.683417 0.292893 0.292893C0.683418 -0.0976314 1.31658 -0.0976314 1.70711 0.292893L7.70711 6.29289C8.09763 6.68342 8.09763 7.31658 7.70711 7.70711L1.70711 13.7071C1.31658 14.0976 0.683418 14.0976 0.292893 13.7071Z"
+                              fill="currentColor" />
+                      </svg>
+                  </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className='wwdbox--container'>
-          <div className='wwdbox three'>
-            <div className='grid grid-cols-6 gap-y-8 grid-flow-col md:grid-cols-12 md:gap-y-12'>
-              <div className='flex flex-col col-start-1 col-end-7 row-start-1 row-end-auto md:col-start-7 md:col-end-13 md:row-start-1 items-center aspect-square wwdpics--container'>
-                <div>
-                  <Image className='wwdpics' src='/events.jpg' alt='' layout='fill'/>
-                </div>
-              </div>
-              <div className='flex flex-col col-start-1 col-end-7 row-start-2 row-end-auto md:col-start-2 md:col-end-7 lg:col-end-6 md:row-start-1 justify-around items-center text-left'>
-                <div>
-                  <h2 className='text-3xl mb-4'>Events</h2>
-                  <p className='text-xl mb-4'>Join our in-person events...we don't do that virtual stuff.</p>
-                  <p className='hidden'>Keep your creativity flowing and ship products faster with a tool that makes light work of sending, sharing, and reviewing work.</p>
-                  <button className='rounded-full buttline'>Find or plan one</button>
-                </div>
-              </div>
             </div>
-          </div>
+            
         </div>
       </section>
 
+      
     </main>
   )
 }
