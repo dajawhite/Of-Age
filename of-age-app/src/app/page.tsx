@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Hero from '../components/Hero'
 import Head from 'next/head'
 import Slide from '@/components/Slide'
+import Slide2 from '@/components/Slide2'
 
 export default function Home() {
   return (
@@ -143,6 +144,20 @@ export default function Home() {
         </div>
         <Slide></Slide>
       </section>
+
+      {/* featured stories w uni rep */}
+      <section className='h-screen mt-24'>
+        <div className='flex justify-center'>
+          <h2 className='text-4xl text-center'>Imagine how your stories <br/>could look on Storio</h2>
+        </div>
+        <Slide2></Slide2>
+      </section>
+
+      {/* featured stories w uni rep */}
+      <section className='h-screen'>
+
+      </section>
+
 
       
     </main>
