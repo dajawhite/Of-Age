@@ -304,7 +304,7 @@ hr{
 .book-list {
   float: left;
   padding-top: 90px;
-  padding-bottom: 45px;
+  padding-bottom: 15px;
   transition: transform .3s;
   display: flex
 }
@@ -505,3 +505,14 @@ hr{
 .arrows{
   padding-left: 52px;
 }
+
+/*TO HIDE SCROLL BAR*/
+#pnProductNav::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+#pnProductNav {
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
