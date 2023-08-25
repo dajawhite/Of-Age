@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* featured stories w uni rep */}
-      <section className='h-screen mt-24'>
+      <section className='h-screen mt-64'>
         <div className='flex justify-center'>
           <h2 className='text-4xl text-center'>Imagine how your stories <br/>could look on Storio</h2>
         </div>
@@ -154,8 +154,39 @@ export default function Home() {
       </section>
 
       {/* featured stories w uni rep */}
-      <section className='h-screen'>
+      <section className='h-screen mt-64 pb-8'>
+        <div className='flex justify-center'>
+          <h2 className='text-4xl text-center'>Here are more cool things <br/>you can do with Storio.</h2>
+        </div>
+        <div className='grid grid-cols-2 gap-12 px-16 mt-8'>
+          <div className="image-para-pair flex flex-col items-center justify-center justify-self-end">
+            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
+            <p className="text-xl mt-4 text-center">Tag your friends, collaborators or brands.</p>
+          </div>
+          <div className="image-para-pair flex flex-col justify-center items-center justify-self-start">
+            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
+            <p className="text-xl mt-4  text-center ">Tag your friends, collaborators or brands.</p>
+          </div>
+          <div className="image-para-pair flex flex-col justify-center items-center justify-self-end">
+            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
+            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
+          </div>
+          <div className="image-para-pair flex flex-col justify-center items-center justify-self-start">
+            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
+            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
+          </div>
+          <div className="image-para-pair flex flex-col justify-center items-center justify-self-end">
+            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
+            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
+          </div>
+          <div className="image-para-pair flex flex-col justify-center items-center justify-self-start">
+            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
+            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
+          </div>
 
+        </div>
+
+        
       </section>
 
 

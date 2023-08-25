@@ -653,3 +653,10 @@ hr{
   display: block; 
   object-fit: cover;
 }
+
+.image-para-pair img{
+  width: 373px;
+  height: 200px;
+  border-radius:20px;
+}
+
