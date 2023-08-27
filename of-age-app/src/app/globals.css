@@ -287,9 +287,25 @@ hr{
   margin-right: 32px;
   position: relative;
   transition: 0.3s;
-  
+  width: 580px;
+  height: 670px;
+  border-radius: 20px;
 }
 
+@media (max-width: 900px) {
+  .book-item {
+    perspective: 1000px;
+    margin-right: 32px;
+    position: relative;
+    transition: 0.3s;
+    width: 290px;
+    height: 335px;
+  }
+  .book-item img{
+    object-fit: fill;
+  }
+  
+}
 .book-item-2 {
   perspective: 1000px;
   position: relative;
@@ -335,7 +351,7 @@ hr{
 }
 
 .book-item img{
-  object-fit: contain;
+  object-fit:cover;
 }
 
 .book-list {
@@ -515,10 +531,6 @@ hr{
 }
 
 @media screen and (max-width:479px) {
-  .book-item {
-    padding-right: 22px
-  }
-
   .overview-subheading{
     font-size: 24px;
     text-align: left;

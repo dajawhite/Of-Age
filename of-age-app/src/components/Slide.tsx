@@ -8,7 +8,19 @@ function Slide(){
     const pnProductNavRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        const scrollAmount = 600; 
+
+      var scrollAmount = 0; 
+        const handleResize = () => {
+          if(window.innerWidth <= 767){
+            scrollAmount = 300;
+          }
+          else{
+            scrollAmount = 600;
+          }
+        }
+
+        window.addEventListener('resize', handleResize);
+        
 
         const handleLeftClick = () => {
             pnProductNavRef.current?.scrollBy({
@@ -34,6 +46,7 @@ function Slide(){
         return () => {
             leftArrowRef.current?.removeEventListener("click", handleLeftClick);
             rightArrowRef.current?.removeEventListener("click", handleRightClick);
+            window.removeEventListener('resize', handleResize);
         }
 
     }, []);
@@ -48,8 +61,8 @@ function Slide(){
               <div id="pnProductNav" ref={pnProductNavRef} className="book-collection-wrap" data-overflowing="none">
                 <div id="pnProductNavContents" className="book-list">
                   {/*belmont*/}
-                  <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1 ">
-                    <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
+                  <div className="book-item w-full h-auto overflow-hidden opacity-1 ">
+                    <div className='absolute bottom-0 left-0 h-24 w-[290px] lg:w-full lg:block bg-gradient-to-t from-neutral-800'>
                       <h3 className='book-cover-title'>Belmont University</h3>
                     </div>
                     <img src="/belmont.jpg" />
