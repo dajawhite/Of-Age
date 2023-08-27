@@ -89,15 +89,15 @@ function Hero(){
             {showNavbar && (
                 <div className="top-0 left-0">
                     <NavBar data-aos="fade-down"></NavBar>
-                    <header className='items-center pt-28 pb-24 px-4 md:px-0'>
+                    <header className='items-center pt-28 pb-24 px-4 md:px-6 lg:px-0'>
                         <div className='mb-16 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
-                            <h1 className='text-4xl md:text-8xl text-center leading-loose'>
+                            <h1 className='text-4xl md:text-6xl lg:text-8xl text-center leading-loose'>
                                 Our main message  <br/> will  - go here.
                             </h1>
                         </div>
                         <div className='flex flex-col items-center' data-aos="fade-up" data-aos-delay="4500">
                             <p className='text-xl md:text-2xl text-center leading-loose'>
-                            In the vibrant mosaic, whispers of the horizon's zenith resonate through  <br/> the quantum labyrinth, where blossoms and wanderlust cascade.
+                            In the vibrant mosaic, whispers of the horizon's zenith resonate through  <br className='md:hidden lg:inline'/> the quantum labyrinth, where blossoms and wanderlust cascade.
                             </p>
                         </div>
                     </header>

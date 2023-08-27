@@ -8,10 +8,10 @@ function NavBar(){
     const[navbar, setNavbar] = useState(false);
     return (
         <div className="oa-nav w-full">
-            <nav className="flex justify-between items-center py-8 md:py-4 px-11">
+            <nav className="flex justify-between items-center py-8 lg:py-4 px-11">
                 <div className="flex items-center ">
                     <Link href="index.html" aria-current="page" className="mr-32"><Image src="/oa-word.png" alt="" width={100} height={70} /></Link>
-                    <div className="flex items-center relative h-full hidden md:flex">
+                    <div className="flex items-center relative h-full hidden lg:flex">
                         <Link href="index.html" className="mr-8">
                             <div className="uppercase tracking-tight text-xs underline decoration-2 underline-offset-4">who are we</div>
                         </Link>
