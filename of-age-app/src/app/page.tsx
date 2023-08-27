@@ -19,7 +19,7 @@ export default function Home() {
           {/*large text */}
           <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center">
             <div className="max-w-6xl px-6 mx-auto">
-            <h2 className="my-20 text-5xl text-center lg:text-8xl lg:mt-0">You are Of Age. They are Of Age.</h2>
+            <h2 className="my-20 text-5xl text-center lg:text-8xl lg:leading-relaxed lg:mt-0 leading-relaxed" >You are Of Age.<br className='hidden md:inline'/> They are Of Age.</h2>
             </div>
           </div>
 
