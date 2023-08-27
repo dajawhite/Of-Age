@@ -78,7 +78,7 @@ function Hero(){
 
             {/* Text */}
             {showText && (
-                <div className={`h-screen flex flex-col items-center pt-28 pb-24 justify-center px-6 transition-all duration-1000 bg-black ${fadeOutText ? 'opacity-0' : ''}`} data-aos="fade-in">
+                <div className={`h-screen flex flex-col items-center pt-8 md:pt-28 pb-24 justify-center px-6 transition-all duration-1000 bg-black ${fadeOutText ? 'opacity-0' : ''}`} data-aos="fade-in">
                     <h1 className="text-xl text-center leading-loose text-white">
                     Vibrant blossoms cascade across <br/> the horizon's mosaic labyrinth.
                     </h1>
