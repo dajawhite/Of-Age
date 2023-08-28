@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Head from 'next/head'
 import Slide from '@/components/Slide'
 import Slide2 from '@/components/Slide2'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -189,10 +190,8 @@ export default function Home() {
         
       </section>
 
+      <Footer></Footer>
 
-
-
-      
     </main>
   )
 }

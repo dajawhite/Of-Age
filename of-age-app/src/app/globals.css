@@ -700,3 +700,30 @@ hr{
   border-radius:20px;
 }
 
+.animated-link{
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-link:hover{
+  transform: scale(0.95);
+}
+
+.underline-link{
+  position: relative;
+  display: inline-block;
+}
+
+.underline-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  transition: width 0.3s;
+}
+
+a:hover .underline-link::after{
+  width: 100%
+}
