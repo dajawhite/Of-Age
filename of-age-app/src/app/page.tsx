@@ -19,12 +19,12 @@ export default function Home() {
           {/*large text */}
           <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center">
             <div className="max-w-6xl px-6 mx-auto">
-            <h2 className="my-20 text-5xl text-center lg:text-8xl lg:leading-relaxed lg:mt-0 leading-relaxed" >You are Of Age.<br className='hidden md:inline'/> They are Of Age.</h2>
+            <h2 className="text-5xl text-center lg:text-8xl lg:leading-relaxed lg:mt-0 leading-relaxed" >You are Of Age.<br className='hidden md:inline'/> They are Of Age.</h2>
             </div>
           </div>
 
           {/*images */}
-          <div className="max-w-6xl px-6 mx-auto px-4 pb-16 mx-auto space-y-16 lg:px-0 lg:space-y-0 lg:pb-[100vh]">
+          <div className="max-w-6xl px-6 px-4 pb-16 mx-auto space-y-16 lg:px-0 lg:space-y-0 lg:pb-[100vh]">
             {/*image 1*/}
             <div className="lg:ml-40 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
               <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[400px]  lg:w-[390px] w-[290px] h-[290px] lg:w-auto">
@@ -134,7 +134,7 @@ export default function Home() {
       </section>
 
       {/* what we do */}
-      <section className='h-screen'>
+      <section className='mt-32 lg:mt-64'>
         <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-16 px-16">
           <h1 className='text-5xl'>Residences</h1>
           <div className='text-2xl pr-10 space-y-4'>
@@ -146,40 +146,40 @@ export default function Home() {
       </section>
 
       {/* featured stories w uni rep */}
-      <section className='h-screen mt-64'>
+      <section className='mt-32 lg:mt-64'>
         <div className='flex justify-center'>
           <h2 className='text-4xl text-center'>Imagine how your stories <br/>could look on Storio</h2>
         </div>
         <Slide2></Slide2>
       </section>
 
-      {/* featured stories w uni rep */}
-      <section className='h-screen mt-64 pb-8'>
+      {/* here are more cool things */}
+      <section className='mt-32 lg:mt-64'>
         <div className='flex justify-center'>
           <h2 className='text-4xl text-center'>Here are more cool things <br/>you can do with Storio.</h2>
         </div>
-        <div className='grid grid-cols-2 gap-12 px-16 mt-8'>
-          <div className="image-para-pair flex flex-col items-center justify-center justify-self-end">
+        <div className='grid lg:grid-cols-2 grid-cols-1 gap-12 lg:px-16 px-4 mt-8'>
+          <div className="image-para-pair flex flex-col items-center justify-center lg:justify-self-end">
             <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
             <p className="text-xl mt-4 text-center">Tag your friends, collaborators or brands.</p>
           </div>
-          <div className="image-para-pair flex flex-col justify-center items-center justify-self-start">
+          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-start">
             <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
             <p className="text-xl mt-4  text-center ">Tag your friends, collaborators or brands.</p>
           </div>
-          <div className="image-para-pair flex flex-col justify-center items-center justify-self-end">
+          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-end">
             <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
             <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
           </div>
-          <div className="image-para-pair flex flex-col justify-center items-center justify-self-start">
+          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-start">
             <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
             <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
           </div>
-          <div className="image-para-pair flex flex-col justify-center items-center justify-self-end">
+          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-end">
             <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
             <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
           </div>
-          <div className="image-para-pair flex flex-col justify-center items-center justify-self-start">
+          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-start">
             <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
             <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
           </div>
@@ -188,6 +188,8 @@ export default function Home() {
 
         
       </section>
+
+
 
 
       
