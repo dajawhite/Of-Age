@@ -304,8 +304,22 @@ hr{
   .book-item img{
     object-fit: fill;
   }
-  
 }
+
+@media (max-width: 700px) {
+  .book-item {
+    perspective: 1000px;
+    margin-right: 8px;
+    position: relative;
+    transition: 0.3s;
+    width: 290px;
+    height: 335px;
+  }
+  .book-item img{
+    object-fit: fill;
+  }
+}
+
 .book-item-2 {
   perspective: 1000px;
   position: relative;
@@ -317,12 +331,15 @@ hr{
   bottom: 0;
   left: 0;
   right: 24px; /* Span the card across the entire width of the parent */
-  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
   opacity: 0; /* Initially set to invisible */
   transition: opacity 0.3s; /* Smooth fade-in effect */
   pointer-events: none; /* Ensure the card doesn't interfere with hover effect when mouse moves off it */
   border-radius: 0 20px 0 20px;
+  z-index: 1;
 }
+
+
 
 .uni-cards-2 {
   width: 400px;
@@ -344,10 +361,6 @@ hr{
 
 .book-item:hover .uni-cards {
   opacity: 1; /* Make the card visible upon hover */
-}
-
-.book-item:hover .book-cover-title {
-  opacity: 0; /* Make the card visible upon hover */
 }
 
 .book-item img{
@@ -388,6 +401,8 @@ hr{
   padding-right: 16px;
   overflow: auto
 }
+
+
 
 .collections-nav-button {
   width: 40px;
@@ -476,7 +491,9 @@ hr{
   }
 
   .book-cover-title {
-    font-size: 18px
+    font-size: 18px;
+    bottom: 15px;
+    left: 20px;
   }
 
   .book-page {
@@ -521,8 +538,8 @@ hr{
   .book-cover-title {
     padding-right: 13px;
     font-size: 16px;
-    bottom: 10px;
-    left: 14px
+    bottom: 15px;
+    left: 15px
   }
 
   .book-page {
@@ -544,7 +561,7 @@ hr{
 
   .book-collection-wrap {
     margin-top: -60px;
-    padding-left: 26px
+    padding-left: 8px
   }
 
   .collections-nav-gradient {
@@ -575,7 +592,6 @@ hr{
   scrollbar-width: none;  /* Hide scrollbar for Firefox */
   display: flex;
   overflow-x: scroll;
-  white-space: nowrap;
 }
 
 .article-wrap {

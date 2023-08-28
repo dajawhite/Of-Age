@@ -61,19 +61,19 @@ function Slide(){
               <div id="pnProductNav" ref={pnProductNavRef} className="book-collection-wrap" data-overflowing="none">
                 <div id="pnProductNavContents" className="book-list">
                   {/*belmont*/}
-                  <div className="book-item w-full h-auto overflow-hidden opacity-1 ">
-                    <div className='absolute bottom-0 left-0 h-24 w-[290px] lg:w-full lg:block bg-gradient-to-t from-neutral-800'>
+                  <div className="book-item w-full h-auto overflow-hidden">
+                    <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
                       <h3 className='book-cover-title'>Belmont University</h3>
                     </div>
                     <img src="/belmont.jpg" />
-                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                    <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white">
                       <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
                       </div>
                       <h2 className='text-lg'>Now Leasing</h2>
                     </div>
-                    <div className='uni-cards py-8 pl-8 pr-12'>
+                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col'>
                       <div className='space-y-4'>
                         <h3 className='text-2xl font-semibold'>Building A</h3>
                         <p>Mixed-use<br/>500 W. Broad St.</p>
@@ -96,14 +96,14 @@ function Slide(){
                       <h3 className='book-cover-title'>Harvard University</h3>
                     </div>
                     <img src="/harvard.jpg" />
-                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                    <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white">
                       <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
                       </div>
                       <h2 className='text-lg'>Now Leasing</h2>
                     </div>
-                    <div className='uni-cards py-8 pl-8 pr-12'>
+                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col'>
                       <div className='space-y-4'>
                         <h3 className='text-2xl font-semibold'>Building A</h3>
                         <p>Mixed-use<br/>500 W. Broad St.</p>
@@ -126,14 +126,14 @@ function Slide(){
                       <h3 className='book-cover-title'>University of Notre Dame</h3>
                     </div>
                     <img src="/notredame.jpg" />
-                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                    <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white">
                       <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
                       </div>
                       <h2 className='text-lg'>Now Leasing</h2>
                     </div>
-                    <div className='uni-cards py-8 pl-8 pr-12'>
+                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col'>
                       <div className='space-y-4'>
                         <h3 className='text-2xl font-semibold'>Building A</h3>
                         <p>Mixed-use<br/>500 W. Broad St.</p>
@@ -156,14 +156,14 @@ function Slide(){
                       <h3 className='book-cover-title'>Oxford University</h3>
                     </div>
                     <img src="/oxford.jpg" />
-                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                    <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white">
                       <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
                       </div>
                       <h2 className='text-lg'>Now Leasing</h2>
                     </div>
-                    <div className='uni-cards py-8 pl-8 pr-12'>
+                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col'>
                       <div className='space-y-4'>
                         <h3 className='text-2xl font-semibold'>Building A</h3>
                         <p>Mixed-use<br/>500 W. Broad St.</p>
@@ -186,14 +186,14 @@ function Slide(){
                       <h3 className='book-cover-title'>University of Montana</h3>
                     </div>
                     <img src="/montana.jpg" />
-                    <div className="hidden absolute first-letter:z-[1] lg:flex items-center justify-start gap-3 lg:gap-4 top-10 left-10 text-body uppercase text-white">
+                    <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white">
                       <div className="relative block w-2 h-2 lg:h-3 lg:w-3">
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
                       </div>
                       <h2 className='text-lg'>Now Leasing</h2>
                     </div>
-                    <div className='uni-cards py-8 pl-8 pr-12'>
+                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col'>
                       <div className='space-y-4'>
                         <h3 className='text-2xl font-semibold'>Building A</h3>
                         <p>Mixed-use<br/>500 W. Broad St.</p>
