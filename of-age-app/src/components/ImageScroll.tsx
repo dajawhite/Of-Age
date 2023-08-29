@@ -1,8 +1,12 @@
+"use client"
+
 import React, { useEffect, useState, useRef } from 'react';
 
 const ImagesComponent = () => {
+  //state variable to keep track of current image displayed
   const [currentImage, setCurrentImage] = useState(0);
 
+  //holds an array of refs, for each section of the page
   const imageRefs = useRef<React.RefObject<HTMLDivElement>[]>([]);
   imageRefs.current = [
     React.createRef(),
@@ -12,13 +16,14 @@ const ImagesComponent = () => {
   ];
 
   const images = [
-    'path/to/image1.jpg',
-    'path/to/image2.jpg',
-    'path/to/image3.jpg',
+    '/article-card.png',
+    '/article-card.png',
+    '/article-card.png',
     //... add as many images as you want
   ];
 
   useEffect(() => {
+    //observes each section of the page
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry, index) => {
@@ -31,12 +36,12 @@ const ImagesComponent = () => {
     );
 
     imageRefs.current.forEach((ref, index) => {
-      observer.observe(ref.current);
+      if(ref.current) observer.observe(ref.current);
     });
 
     return () => {
       imageRefs.current.forEach((ref, index) => {
-        observer.unobserve(ref.current);
+        if(ref.current) observer.unobserve(ref.current);
       });
     };
   }, []);
