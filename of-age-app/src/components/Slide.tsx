@@ -9,13 +9,10 @@ function Slide(){
 
     useEffect(() => {
 
-      var scrollAmount = 0; 
+      var scrollAmount = 600; 
         const handleResize = () => {
           if(window.innerWidth <= 767){
             scrollAmount = 300;
-          }
-          else{
-            scrollAmount = 600;
           }
         }
 
