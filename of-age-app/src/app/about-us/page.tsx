@@ -42,7 +42,7 @@ export default function About(){
             </header>
             <section className="mt-16 bg-black lg:px-[5vw] px-[6vw] pb-16">
                 <div className="text-white">
-                    <h1 className="uppercase text-6xl font-extrabold pt-8">Our story.</h1>
+                    <h1 className="uppercase text-6xl font-extrabold lg:pt-24 pt-16">Our story.</h1>
                     <div className="lg:mt-[10.5vw] mt-[21vw] text-[7vw] lg:text-[3vw] leading-tight">
                         <p className="">Capital Group is a management consulting firm with more than a decade of experience in providing effective and innovative consulting services to public and private sector clients. Our projects have saved clients over $3 billion since our inception.<br/><br/>Each day we earn the trust of our clients through solving complex program management and systems engineering challenges, while carefully managing risks. Our capabilities are rooted in experienced program management, strong technical competencies, and results that matter for our clients.
                         </p>
