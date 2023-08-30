@@ -65,14 +65,12 @@ export default function About(){
                                 <h2 className="lg:text-[4.3vw] text-[18vw]">$3B</h2>
                                 <p className="mt-[1vw] lg:text-[.75vw] text-[4vw]">Achieved $3B in<br/> Customer Cost Savings</p>
                             </div>
-                            <div className="ml-[5vw] mt-[12vw] lg:mt-0 w-[41vw] lg:w-auto">
+                            <div className="ml-0 lg:ml-[5vw] mt-[12vw] lg:mt-0 w-[41vw] lg:w-auto">
                                 <h2 className="lg:text-[4.3vw] text-[18vw]">97%</h2>
                                 <p className="mt-[1vw] lg:text-[.75vw] text-[4vw]">Customer Satisfaction Rating</p>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
 
             </section>
