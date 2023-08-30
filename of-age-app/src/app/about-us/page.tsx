@@ -8,7 +8,7 @@ export default function About(){
                     <h1 className="text-5xl lg:text-9xl font-bold uppercase">Initiate</h1>
                 </div>
                 <div className="flex justify-center mt-4 lg:mt-10">
-                    <p className="text-left text-xl lg:text-2xl">We bring <button className="rounded-full border-2 border-orange-400 text-orange-400 px-2">New Life <img className="inline w-[16px] lg:w-[24px] "src="arrow.png"/></button>, light, and joy to the old,<br className="hidden lg:block"/> mundane or otherwise overlooked.</p>
+                    <p className="text-left text-xl lg:text-2xl">We bring <button className="rounded-full border-2 border-orange-400 text-orange-400 px-2 hover:bg-orange-400 hover:text-white">New Life <img className="inline w-[16px] lg:w-[24px] "src="arrow.png"/></button>, light, and joy to the old,<br className="hidden lg:block"/> mundane or otherwise overlooked.</p>
                 </div>
                 <div className="mt-4 lg:mt-10 justify-center flex flex-col">
                     <img src="/snowy.jpg" className="rounded-[30px] w-auto h-[320px] lg:w-full lg:h-auto"/>
@@ -40,6 +40,17 @@ export default function About(){
                 </div>
                 
             </header>
+            <section className="mt-16 bg-black lg:px-[5vw] px-[6vw] pb-16">
+                <div className="text-white">
+                    <h1 className="uppercase text-6xl font-extrabold pt-8">Our story.</h1>
+                    <div className="lg:mt-[10.5vw] mt-[21vw] text-[7vw] lg:text-[3vw] leading-tight">
+                        <p className="">Capital Group is a management consulting firm with more than a decade of experience in providing effective and innovative consulting services to public and private sector clients. Our projects have saved clients over $3 billion since our inception.<br/><br/>Each day we earn the trust of our clients through solving complex program management and systems engineering challenges, while carefully managing risks. Our capabilities are rooted in experienced program management, strong technical competencies, and results that matter for our clients.
+                        </p>
+                    </div>
+                    
+                </div>
+
+            </section>
             <Footer></Footer>
         </main>
         
