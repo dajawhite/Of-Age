@@ -76,6 +76,40 @@ export default function About(){
                 </div>
 
             </section>
+            <section className="mt-16 lg:mb-[-8rem] lg:px-12 px-4">
+                <h1 className="text-4xl font-bold">Take action. Start building.</h1>
+                <div className="bg-rose-100 rounded-[20px] flex lg:flex-row flex-col mt-8 lg:h-[30rem] divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-slate-50">
+                    <div className="flex flex-col justify-between lg:w-1/3 items-start p-8 about-action rounded-t-[20px] lg:rounded-l-[20px] lg:rounded-tr-none gap-y-9 lg:gap-y-0">
+                        <img src="/icon/article.png" className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"/>
+                        <div className="pr-20 flex flex-col gap-x-2">
+                            <h2 className="text-2xl font-semibold about-action-h">For Companies</h2>
+                            <p className="text-sm pt-2">Start building your team and hire the most motivated remote tech talents in the world.</p>
+                        </div>
+                        <a href="#"><button className="rounded-full border-2 px-3 py-1 border-black hover:bg-black hover:text-white">Hire a team</button></a>
+
+                    </div>
+                    <div className="flex flex-col justify-between lg:w-1/3 items-start p-8 about-action gap-y-9 lg:gap-y-0">
+                        <img src="/icon/article.png" className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"/>
+                        <div className="pr-20 flex flex-col gap-x-2">
+                            <h2 className="text-2xl font-semibold about-action-h">For Talent</h2>
+                            <p className="text-sm pt-2">For the next era of work you get to be in control. Freedom, ownership and belonging.</p>
+                        </div>
+                        <a href="#"><button className="rounded-full border-2 px-3 py-1 border-black hover:bg-black hover:text-white">Hire a team</button></a>
+
+                    </div>
+                    <div className="flex flex-col justify-between lg:w-1/3 items-start p-8 about-action rounded-b-[20px] lg:rounded-r-[20px] lg:rounded-bl-none gap-y-9 lg:gap-y-0">
+                        <img src="/icon/article.png" className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"/>
+                        <div className="pr-20 flex flex-col gap-x-2">
+                            <h2 className="text-2xl font-semibold about-action-h">Society</h2>
+                            <p className="text-sm pt-2">Token-based, member-owned society that is built around every member’s best interest.</p>
+                        </div>
+                        <a href="#" className="underline underline-offset-8 decoration-2 hover:no-underline moveRight">Explore <img src="/arrow.png" className="inline"/></a>
+
+                    </div>
+                
+                </div>
+
+            </section>
             <Footer></Footer>
         </main>
         

@@ -728,3 +728,27 @@ a:hover .underline-link::after{
   width: 100%
 }
 
+.about-action{
+  transition: background-color 0.5s ease-in-out;
+}
+
+.about-action:hover{
+  background-color: rgb(254 205 211);
+}
+
+.about-action-h{
+  transition: transform 0.3s ease-in-out;
+}
+.about-action:hover .about-action-h{
+  transform: translateY(-5px);
+}
+
+.about-action a{
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-action a:hover{
+  transform: scale(1.05) translate(-3px,-3px);
+}
+
+
