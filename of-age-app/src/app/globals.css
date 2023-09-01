@@ -751,4 +751,47 @@ a:hover .underline-link::after{
   transform: scale(1.05) translate(-3px,-3px);
 }
 
+.stack-cards {
+  --stack-cards-gap: calc(0.75 * 1em);
+}
 
+.close-icon{
+  transition: transform 0.3s ease;
+}
+
+.close:hover .close-icon{
+  transform: rotate(90deg)
+}
+
+.stack-cards__item {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0.75em;
+  height: 0;
+  padding-bottom: 50%;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  overflow: hidden; 
+}
+
+.stack-cards__item > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__content {
+  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+  background: black;
+  color: white;
+  border-radius: 1em;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "text img";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: stretch;
+}
