@@ -86,7 +86,7 @@ function NavBar(){
                         </div>
                     </nav>
                     <div className='flex justify-center items-center h-full'>
-                        <h1 className='mt-[-8rem] uppercase font-bold text-8xl mx-auto text-left max-w-[18rem] md:max-w-none'>
+                        <h1 className='mt-[-8rem] uppercase font-bold text-8xl mx-auto text-left max-w-[18rem] md:max-w-none' data-aos="fade-up" data-aos-delay="300">
                             Find devs<br/>Find work
                         </h1>
 
