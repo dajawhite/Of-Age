@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Head from 'next/head'
 import Slide from '@/components/Slide'
 import Footer from '@/components/Footer'
+import StackCards from '@/components/StackCards'
 
 export default function Home() {
   return (
@@ -145,13 +146,13 @@ export default function Home() {
         <Slide></Slide>
       </section>
 
-      {/* featured stories w uni rep 
-      <section className='mt-32 lg:mt-64'>
-        <div className='flex justify-center'>
-          <h2 className='text-4xl text-center'>Imagine how your stories <br/>could look on Storio</h2>
+      <section className='mt-32 lg:mt-64 px-4'>
+        <div>
+          <h1 className='text-5xl'>Coming soon...</h1>
         </div>
+        {/*<StackCards/>*/}
       </section>
-      */}
+      
 
       {/* here are more cool things */}
       <section className='mt-32 lg:mt-64'>
