@@ -13,6 +13,20 @@ function Hero(){
     const [fadeOutImage2, setFadeOutImage2] = useState(false);
     const [fadeOutImage3, setFadeOutImage3] = useState(false);
     const [fadeOutText, setFadeOutText] = useState(false);
+
+    const noScroll = () =>{
+        if (!showNavbar){
+            document.body.style.overflow ='hidden';
+        }
+        else{
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    React.useEffect(() => {
+        noScroll();
+      }, [showNavbar]);
+      
     
     React.useEffect(() => {
         AOS.init({
