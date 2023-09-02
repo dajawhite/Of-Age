@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Slide from '@/components/Slide'
 import Footer from '@/components/Footer'
 import StackCards from '@/components/StackCards'
+import StackingCards from '@/components/sc'
 
 export default function Home() {
   return (
@@ -146,11 +147,11 @@ export default function Home() {
         <Slide></Slide>
       </section>
 
-      <section className='mt-32 lg:mt-64 px-4'>
+      <section className='mt-32 w-screen px-16'>
         <div>
-          <h1 className='text-5xl'>Coming soon...</h1>
+        <StackingCards/>
         </div>
-        {/*<StackCards/>*/}
+        
       </section>
       
 

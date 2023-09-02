@@ -5,10 +5,10 @@ export default function About(){
         <main className='text-black'>
             <header className="pt-8 lg:pt-16 lg:px-56 px-8">
                 <div className="text-center">
-                    <h1 className="text-5xl lg:text-9xl font-bold uppercase">Initiate</h1>
+                    <h1 className="text-5xl lg:text-9xl font-bold uppercase">About Us</h1>
                 </div>
                 <div className="flex justify-center mt-4 lg:mt-10">
-                    <p className="text-left text-xl lg:text-2xl">We bring <button className="rounded-full border-2 border-orange-400 text-orange-400 px-2 hover:bg-orange-400 hover:text-white">New Life <img className="inline w-[16px] lg:w-[24px] "src="arrow.png"/></button>, light, and joy to the old,<br className="hidden lg:block"/> mundane or otherwise overlooked.</p>
+                    <p className="text-left text-xl lg:text-2xl">Daja is <button className="rounded-full border-2 border-orange-400 text-orange-400 px-2 hover:bg-orange-400 hover:text-white">Determined <img className="inline w-[16px] lg:w-[24px] "src="arrow.png"/></button> to get a dog,<br className="hidden lg:block"/> nothing will stand in her way.</p>
                 </div>
                 <div className="mt-4 lg:mt-10 justify-center flex flex-col">
                     <img src="/snowy.jpg" className="rounded-[30px] w-auto h-[320px] lg:w-full lg:h-auto"/>
