@@ -1,40 +1,42 @@
 "use client"
-// components/SwitchContentOnScroll.tsx
-import React, { useEffect, useState } from 'react';
 
-const SwitchContentOnScroll: React.FC = () => {
-  const [currentContent, setCurrentContent] = useState('Content 1');
+import React, { useEffect, useState, useRef } from 'react';
+import AOS from 'aos';
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setCurrentContent(`Content ${entry.target.id}`);
-        }
-      });
-    }, { threshold: 0.5 });
+function SwitchContent () {
+    const [show, setShow] = useState(1);
 
-    const card1 = document.getElementById('1');
-    const card2 = document.getElementById('2');
-    const card3 = document.getElementById('3');
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setShow(prev => prev % 3 + 1);
+        }, 3000);
 
-    if (card1) observer.observe(card1);
-    if (card2) observer.observe(card2);
-    if (card3) observer.observe(card3);
+        return () => {
+            clearInterval(timer);
+        };
+    }, []);
 
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   return (
-    <div className="p-8 border-2 border-blue-500">
-      {currentContent}
-      <div id="1" className="h-48"></div>
-      <div id="2" className="h-48"></div>
-      <div id="3" className="h-48"></div>
+    <div className='flex items-center justify-center'>
+        {show === 1 && (
+            <div className=''>
+                <img src="/article-card-1.png" className='rounded-[20px] h-[500px]'/>
+            </div>
+        )}
+        {show === 2 && (
+            <div className=''>
+                <img src="/article-card-2.png" className='rounded-[20px] h-[500px]'/>
+            </div>
+        )}
+        {show === 3 && (
+            <div className=''>
+                <img src="/article-card-3.png" className='rounded-[20px] h-[500px]'/>
+            </div>
+        )}
     </div>
   );
 };
 
-export default SwitchContentOnScroll;
+export default SwitchContent;
+

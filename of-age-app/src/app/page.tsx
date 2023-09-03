@@ -1,10 +1,8 @@
 import Image from 'next/image'
 import Hero from '../components/Hero'
-import Head from 'next/head'
 import Slide from '@/components/Slide'
 import Footer from '@/components/Footer'
-import StackCards from '@/components/StackCards'
-import StackingCards from '@/components/sc'
+import SwitchContent from '@/components/sc'
 
 export default function Home() {
   return (
@@ -147,14 +145,11 @@ export default function Home() {
         <Slide></Slide>
       </section>
 
-      <section className='mt-32 w-screen px-16'>
-        <div>
-        <StackingCards/>
-        </div>
-        
-      </section>
-      
 
+     <section className='mt-32 lg:mt-64' >
+        <SwitchContent/>
+     </section>
+    
       {/* here are more cool things */}
       <section className='mt-32 lg:mt-64'>
         <div className='flex justify-center'>
