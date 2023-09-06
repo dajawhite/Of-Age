@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import AOS from 'aos';
-import SignUp from './SignUp';
 
 function NavBar(){
     const[menuActive, setMenuActive] = useState(false);
@@ -53,7 +52,6 @@ function NavBar(){
                         </div>
                     </nav>
                     <div className='flex justify-center items-center h-full'>
-                        <SignUp/>
 
                     </div>
                 </div>
