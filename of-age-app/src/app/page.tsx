@@ -7,6 +7,9 @@ import SwitchContent from '@/components/sc'
 export default function Home() {
   return (
     <main className='text-black '>
+      <head>
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+      </head>
 
       {/* header */}
       <section className='lg:h-screen'>
