@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import Hero from './components/Hero'
 import Slide from '@/app/components/Slide'
 import Footer from '@/app/components/Footer'
