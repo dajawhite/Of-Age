@@ -94,7 +94,7 @@ function Hero(){
             {showText && (
                 <div className={`h-screen flex flex-col items-center pt-8 md:pt-28 pb-24 justify-center px-6 transition-all duration-1000 bg-black ${fadeOutText ? 'opacity-0' : ''}`} data-aos="fade-in">
                     <h1 className="text-xl text-center leading-loose text-white">
-                    Vibrant blossoms cascade across <br/> the horizon's mosaic labyrinth.
+                    Make the most of your university experience <br/> share your story & connect with others. 
                     </h1>
                 </div>
             )}
@@ -103,15 +103,16 @@ function Hero(){
             {showNavbar && (
                 <div className="top-0 left-0">
                     <NavBar1 data-aos="fade-down"></NavBar1>
-                    <header className='items-center pt-28 pb-24 px-4 md:px-6 lg:px-0'>
+                    <header className='items-center pt-28 pb-24 px-4 md:px-6 lg:px-11'>
                         <div className='mb-16 md:mb-32 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
                             <h1 className='text-4xl md:text-6xl lg:text-8xl text-center leading-loose'>
-                                Our main message  <br/> will  - go here.
+                                Meet who's building startups at your university & beyond
                             </h1>
                         </div>
                         <div className='flex flex-col items-center' data-aos="fade-up" data-aos-delay="4500">
                             <p className='text-xl md:text-2xl text-center leading-loose'>
-                            In the vibrant mosaic, whispers of the horizon's zenith resonate through  <br className='md:hidden lg:inline'/> the quantum labyrinth, where blossoms and wanderlust cascade.
+                            Make the most of your university experience. <br className='md:hidden lg:inline'/>Share your story. 
+                            
                             </p>
                         </div>
                     </header>
