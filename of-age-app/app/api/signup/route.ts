@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { connectToDatabase } from '../../../../models/User';  // Adjust the path based on your project structure
+import { connectToDatabase } from '../../../models/User';  // Adjust the path based on your project structure
 import * as yup from 'yup';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {

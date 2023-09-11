@@ -1,8 +1,8 @@
 import Image from "next/legacy/image"
 import Hero from './components/Hero'
-import Slide from '@/app/components/Slide'
-import Footer from '@/app/components/Footer'
-import SwitchContent from '@/app/components/sc'
+import Slide from './components/Slide'
+import Footer from './components/Footer'
+import SwitchContent from './components/sc'
 
 export default function Home() {
   return (
