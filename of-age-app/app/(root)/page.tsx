@@ -23,10 +23,10 @@ export default function Home() {
           </div>
 
           {/*images */}
-          <div className="max-w-6xl px-6 px-4 pb-16 mx-auto space-y-16 lg:px-0 lg:space-y-0 lg:pb-[100vh]">
+          <div className="max-w-6xl px-6  pb-16 mx-auto space-y-16 lg:px-0 lg:space-y-0 lg:pb-[100vh]">
             {/*image 1*/}
             <div className="lg:ml-40 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
-              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[400px]  lg:w-[390px] w-[290px] h-[290px] lg:w-auto">
+              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[400px]  lg:w-[390px] h-[290px]">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout='fill' objectFit='cover' alt='' src="/paytonoa.jpg"  className="w-full h-full rounded-xl" />
                 </div>
@@ -42,7 +42,7 @@ export default function Home() {
 
             {/*image 2 */}
             <div className="ml-auto z-20 max-w-[290px] lg:max-w-sm relative">
-              <a href="/blog/stories/i-have-the-best-job-in-the-world" className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group h-[320px] lg:h-[460px] w-[290px] h-[290px] lg:w-auto">
+              <a href="/blog/stories/i-have-the-best-job-in-the-world" className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[460px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout="fill" objectFit='cover' alt='' src="/jeremiahoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl group-hover:scale-110"/>
                 </div>
@@ -53,7 +53,7 @@ export default function Home() {
                     <p>I started TCU's Frog Fund.</p>
                   </h3>
                 </div>
-                <button className="z-10 block relative flex items-center mt-6 pointer-events-none"  >
+                <button className="z-10 relative flex items-center mt-6 pointer-events-none"  >
                   <div className="flex items-center overflow-hidden gap-x-2 group"  >
                     <div className="relative">
                       <div className="transition duration-500 md:group-hover:-translate-y-full py-0.5">Read the story</div>
@@ -69,7 +69,7 @@ export default function Home() {
 
             {/*image 3 */}
             <div className="z-20 max-w-[290px] lg:max-w-sm relative">
-              <a href="/blog/stories/vfx-where-talents-interests-collide" className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group h-[320px] lg:h-[460px] lg:h-[320px] lg:w-[320px] w-[290px] h-[290px] lg:w-auto">
+              <a href="/blog/stories/vfx-where-talents-interests-collide" className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[460px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout="fill" objectFit='cover' alt='' src="/dudesoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl group-hover:scale-110"/>
                 </div>
@@ -81,7 +81,7 @@ export default function Home() {
                     <p>We're changing product design at legacy companies.</p>
                   </div>
                 </div>
-                <button className="z-10 block relative flex items-center mt-6 pointer-events-none"  >
+                <button className="z-10 relative flex items-center mt-6 pointer-events-none"  >
                   <div className="flex items-center overflow-hidden gap-x-2 group"  >
                     <div className="relative">
                       <div className="transition duration-500 md:group-hover:-translate-y-full py-0.5">Read the story
@@ -99,7 +99,7 @@ export default function Home() {
 
             {/*image 4 */}
             <div className="ml-auto lg:mr-20 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
-              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[320px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
+              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[320px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout="fill" objectFit='cover' alt='' src="/camoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl"/>
                 </div>
@@ -115,7 +115,7 @@ export default function Home() {
 
             {/*image 5*/}
             <div className="lg:ml-20 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
-              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[320px]  lg:w-[256px] w-[290px] h-[290px] lg:w-auto">
+              <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[320px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout="fill" objectFit='cover' alt='' src="/mboa.jpg" className="w-full h-full transition duration-300 transform rounded-xl"/>
                 </div>
