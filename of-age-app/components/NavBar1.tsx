@@ -24,11 +24,10 @@ function NavBar(){
                         </Link>
                     </div>
                 </div>
-                <div className="flex justify-between items-center 
-                ">
+                <div className=" flex nav-butt signup">
                     <SignedOut>
                         <SignUpButton mode="modal">
-                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer p-[2em] md:p-[1em] nav-butt signup ">Early Access 
+                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer ">Early Access 
                             <span className="hidden md:inline ml-2 ">
                                 <Image className="ml-8" src="/white-arrow.png" alt="" width={15} height={15} />
                             </span>
@@ -37,12 +36,12 @@ function NavBar(){
                     </SignedOut>
                     <SignedIn>
                         <div className="hidden md:flex mr-4">
-                            <h1 className="font-semibold uppercase">hi, {user?.firstName}</h1>
+                            <h1 className="font-semibold uppercase text-white">hi, {user?.firstName}</h1>
                         </div>
                     </SignedIn>
                     <SignedIn>
                         <SignOutButton >
-                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer p-[2em] md:p-[1em] nav-butt signup">Sign Out 
+                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer">Sign Out 
                             <span className="hidden md:inline ml-2">
                                 <Image className="" src="/white-arrow.png" alt="" width={15} height={15} />
                             </span>

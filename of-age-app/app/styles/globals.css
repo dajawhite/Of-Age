@@ -131,12 +131,13 @@ hr{
 
 @media (max-width: 400px){
   .image-container {
-    width: 250px; 
-    height: 250px; 
+    width: 400px; 
+    height: 175px; 
     overflow: hidden; 
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: flex-start;
   }
 }
 
@@ -172,9 +173,17 @@ hr{
 
 .nav-butt.signup{
   background-color: var(--primary);
+  padding: 1em;
 
 }
 
+@media (max-width: 400px){
+  .nav-butt.signup{
+    background-color: var(--primary);
+    padding: 2em;
+  
+  }
+}
 
 
 

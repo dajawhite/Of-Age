@@ -77,9 +77,9 @@ function Hero(){
         <div className='relative'>
             {/* Images */}
             {showImages && (
-                <div className={`h-screen flex flex-col md:flex-row items-center py-2 md:py-24 justify-center space-y-4 md:space-x-14 md:px-10 transition-all duration-1000`}>
+                <div className={`h-screen flex flex-col md:flex-row items-center md:py-24 justify-center space-y-4 md:space-x-14 md:px-10 transition-all duration-1000`}>
                     <div data-aos="fade-up" data-aos-delay="500" className={`image-container ${fadeOutImage1 ? 'opacity-0' : ''}`}>
-                        <img src="/whohere.jpg" alt="Image 1" className='rounded-md' />
+                        <img src="/whohere.jpg" alt="Image 1" className='rounded-md ' />
                     </div>
                     <div data-aos="fade-up" data-aos-delay="1000" className={`image-container ${fadeOutImage2 ? 'opacity-0' : ''}`}>
                         <img src="/beingbuilt.jpg" alt="Image 2" className='rounded-md' />
@@ -103,7 +103,7 @@ function Hero(){
             {showNavbar && (
                 <div className="top-0 left-0">
                     <NavBar1 data-aos="fade-down"></NavBar1>
-                    <header className='items-center pt-28 pb-24 px-4 md:px-6 lg:px-11'>
+                    <header className='items-center pt-16 md:pt-28 pb-24 px-4 md:px-6 lg:px-11'>
                         <div className='mb-16 md:mb-32 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
                             <h1 className='text-4xl md:text-6xl lg:text-8xl text-center leading-loose'>
                                 Meet who's building startups at your university & beyond
