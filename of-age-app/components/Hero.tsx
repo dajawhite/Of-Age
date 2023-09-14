@@ -112,7 +112,6 @@ function Hero(){
                         <div className='flex flex-col items-center' data-aos="fade-up" data-aos-delay="4500">
                             <p className='text-xl md:text-2xl text-center leading-loose'>
                             Make the most of your university experience. <br className='md:hidden lg:inline'/>Share your story. 
-                            
                             </p>
                         </div>
                     </header>
