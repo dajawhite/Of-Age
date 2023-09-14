@@ -3,7 +3,7 @@
 import Image from "next/legacy/image";
 import Link from 'next/link';
 import AOS from 'aos';
-import { SignUpButton } from "@clerk/nextjs";
+import { SignUpButton, SignOutButton, SignedOut, SignedIn } from "@clerk/nextjs";
 
 function NavBar(){
 
@@ -24,9 +24,20 @@ function NavBar(){
                     </div>
                 </div>
                 <div className="flex justify-between items-center nav-butt signup">
-                    <SignUpButton mode="modal">
+                    <SignedOut>
+                        <SignUpButton mode="modal">
                         <div className="uppercase text-white tracking-tight text-xs cursor-pointer">Early Access <Image className="ml-8" src="/white-arrow.png" alt="" width={15} height={15} /> </div>
-                    </SignUpButton>
+                        </SignUpButton>
+                    </SignedOut>
+                    <SignedIn>
+                        <SignOutButton >
+                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer">Sign Out <Image className="ml-8" src="/white-arrow.png" alt="" width={15} height={15} /> </div>
+                        </SignOutButton>
+                    </SignedIn>
+
+                   
+
+                    
                 </div>
             </nav>
         </div>
