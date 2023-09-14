@@ -3,9 +3,10 @@
 import Image from "next/legacy/image";
 import Link from 'next/link';
 import AOS from 'aos';
-import { SignUpButton, SignOutButton, SignedOut, SignedIn } from "@clerk/nextjs";
+import { SignUpButton, SignOutButton, SignedOut, SignedIn, useUser } from "@clerk/nextjs";
 
 function NavBar(){
+    const {user} = useUser();
 
     AOS.init({
         duration: 500,
@@ -23,15 +24,29 @@ function NavBar(){
                         </Link>
                     </div>
                 </div>
-                <div className="flex justify-between items-center nav-butt signup">
+                <div className="flex justify-between items-center 
+                p-[2em] md:p-[1em] nav-butt signup ">
                     <SignedOut>
                         <SignUpButton mode="modal">
-                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer">Early Access <Image className="ml-8" src="/white-arrow.png" alt="" width={15} height={15} /> </div>
+                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer ">Early Access 
+                            <span className="hidden md:inline ml-2 ">
+                                <Image className="ml-8" src="/white-arrow.png" alt="" width={15} height={15} />
+                            </span>
+                        </div>
                         </SignUpButton>
                     </SignedOut>
                     <SignedIn>
+                        <div>
+                        
+                        </div>
+                    </SignedIn>
+                    <SignedIn>
                         <SignOutButton >
-                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer">Sign Out <Image className="ml-8" src="/white-arrow.png" alt="" width={15} height={15} /> </div>
+                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer">Sign Out 
+                            <span className="hidden md:inline ml-2">
+                                <Image className="" src="/white-arrow.png" alt="" width={15} height={15} />
+                            </span>
+                        </div>
                         </SignOutButton>
                     </SignedIn>
 

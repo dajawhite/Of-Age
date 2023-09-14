@@ -156,8 +156,7 @@ hr{
 
 .nav-butt {
   align-items: center;
-  border-radius: 0.56em;
-  padding: 1.5em 1.4em 1.4em;
+  border-radius: 6px;
   font-size: .93vw;
   position: relative;
 }
@@ -172,11 +171,12 @@ hr{
 }
 
 .nav-butt.signup{
-  padding-top: 1.2em;
-  padding-bottom: 1em;
   background-color: var(--primary);
 
 }
+
+
+
 
 .primtext{
   color: var(--primary);
