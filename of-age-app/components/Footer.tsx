@@ -98,7 +98,7 @@ function Footer(){
 
           </div>
           <div className='flex flex-row divide-x items-center'>
-            <a href="#" className='pr-4'>
+            <a href="/" className='pr-4'>
               <img src="logo.png" className='w-[75px]'/>
             </a>
             <div className='pl-4 text-gray-300'>
