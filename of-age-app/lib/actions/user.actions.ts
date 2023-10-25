@@ -9,11 +9,10 @@ interface Params {
     name: string,
     university: string,
     number: string,
-    iMessage: boolean,
+    iMessage: string,
     email: string,
     x: string,
     instagram: string,
-    snapchat: string,
     path: string
 }
 
@@ -28,7 +27,6 @@ export async function updateUser(
             email,
             x,
             instagram,
-            snapchat,
             path
         }: Params 
     )
@@ -50,7 +48,6 @@ export async function updateUser(
                     email,
                     x,
                     instagram,
-                    snapchat,
                     onboarded: true,
                 },
                 // upsert = update if exists & insert if doesn't exist

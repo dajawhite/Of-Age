@@ -7,12 +7,10 @@ const userSchema = new Schema({
     university: {type: String, required: true},
     onboarded: {type: Boolean, default: false},
     number: {type: String },
-    iMessage: {type: Boolean}, // TODO: selected by user in onboarding
+    iMessage: {type: String}, // TODO: selected by user in onboarding
     email: {type: String},
     x: {type: String},
-    instagram: {type: String},
-    snapchat: {type: String},
-
+    instagram: {type: String}
 });
 
 const User = mongoose.models.User || mongoose.model('User', userSchema)
