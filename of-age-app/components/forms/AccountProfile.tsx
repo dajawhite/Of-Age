@@ -19,6 +19,7 @@ import Image from 'next/image';
 import { ChangeEvent, ChangeEventHandler, useState } from 'react';
 import { Textarea } from '../ui/textarea';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Checkbox } from '@/components/ui/checkbox';
 import { updateUser } from '@/lib/actions/user.actions';
 import { usePathname, useRouter } from 'next/navigation';
 
@@ -36,6 +37,17 @@ interface Props{
   };
   btnTitle: string;
 }
+
+const socials = [
+    {
+        id: "x",
+        label: "X"
+    }, 
+    {
+        id: "instagram",
+        label: "Instagram"
+    }
+]
 
 // user & btnTitle are of type Props
 const AccountProfile = ({user, btnTitle}: Props) => {
@@ -55,6 +67,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           number: user?.number || '',
           iMessage: user?.iMessage || '',
           email: user?.email || '',
+          socials: ["x"],
           x: user?.x || '',
           instagram: user?.instagram || '',
       }
@@ -213,6 +226,56 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                       <FormMessage/>
                   </FormItem>
               )}
+              />
+              {/* Socials? */}
+              <FormField
+              control={form.control}
+              name="socials"
+              render={({ field }) => (
+                  <FormItem className='flex flex-col gap-3 w-full '>
+                      <FormLabel className='text-base-semibold text-black'>
+                        Socials
+                      </FormLabel>
+                      <FormDescription>
+                        Select the socials you want to share.
+                      </FormDescription>
+                      {socials.map((social) => (
+                        <FormField
+                            key={social.id}
+                            control={form.control}
+                            name="socials"
+                            render={({ field }) => {
+                                return(
+                                    <FormItem
+                                        key={social.id}
+                                        className='flex flex-row items-start space-x-3 space-y-0'
+                                    >
+                                        <FormControl >
+                                            <Checkbox
+                                                className='border-black'
+                                                checked={field.value?.includes(social.id)}
+                                                onCheckedChange={(checked) => {
+                                                    return checked
+                                                    ? field.onChange([...field.value, social.id])
+                                                    : field.onChange(
+                                                        field.value?.filter(
+                                                            (value) => value !== social.id
+                                                        )
+                                                    )
+                                                }}
+                                            />
+                                        </FormControl>
+                                        <FormLabel className='font-normal text-black'>
+                                            {social.label}
+                                        </FormLabel>
+                                    </FormItem>
+                                )
+                            }}
+                        />
+                      ))}
+                      <FormMessage/>
+                  </FormItem>
+                )}
               />
               {/*X*/}
               <FormField
