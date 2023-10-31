@@ -63,7 +63,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
   // 2. Define the submit handler
   // submit what's in UserValidation object
   // takes 1 paramter: 'values'
-const onSubmit = async (values: z.infer<typeof UserValidation>) => {
+    const onSubmit = async (values: z.infer<typeof UserValidation>) => {
       // Do something with the form values.
       // ✅ This will be type-safe and validated -- values should already match schema
       
@@ -88,7 +88,7 @@ const onSubmit = async (values: z.infer<typeof UserValidation>) => {
       } else{
           router.push('/');
       }
-  }
+    }
 
   return(
       // spread syntax to pass down properties to React component

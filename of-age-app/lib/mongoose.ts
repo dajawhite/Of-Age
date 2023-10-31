@@ -8,8 +8,10 @@ export const connectToDB = async() => {
     // prevents unknown field queries
     mongoose.set('strictQuery', true);
 
-    if(!process.env.MONGODB_URL) return console.log('MONGODB_URL not found');
-    if(isConnected) return console.log('Already connected to MongoDB');
+    if(!process.env.MONGODB_URL) throw new Error('MONGODB_URL not found');
+    if(mongoose.connection.readyState === 1) {
+        return console.log('Already connected to MongoDB');
+    }
 
     try {
         await mongoose.connect(process.env.MONGODB_URL);
@@ -17,6 +19,7 @@ export const connectToDB = async() => {
         isConnected = true;
         console.log('Connected to MongoDB')
     } catch(error: any){
-        console.log(error);
+        console.error("Error connecting to MongoDB:", error);
+        throw error;
     }
 }
