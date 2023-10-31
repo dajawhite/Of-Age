@@ -52,6 +52,10 @@ const socials = [
 // user & btnTitle are of type Props
 const AccountProfile = ({user, btnTitle}: Props) => {
 
+    const [showX, setX] = useState(false)
+    const [showInsta, setInsta] = useState(false)
+    
+
   const router = useRouter();
   const pathname = usePathname();
 
@@ -67,7 +71,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           number: user?.number || '',
           iMessage: user?.iMessage || '',
           email: user?.email || '',
-          socials: ["x"],
+          socials: [""],
           x: user?.x || '',
           instagram: user?.instagram || '',
       }
@@ -254,14 +258,32 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                                             <Checkbox
                                                 className='border-black'
                                                 checked={field.value?.includes(social.id)}
+                                                // an event handler for if box is checked 
                                                 onCheckedChange={(checked) => {
-                                                    return checked
-                                                    ? field.onChange([...field.value, social.id])
-                                                    : field.onChange(
-                                                        field.value?.filter(
-                                                            (value) => value !== social.id
+                                                    if (checked) {
+                                                        field.onChange([...field.value, social.id])
+                                                        if (social.id === "x") {
+                                                            setX(true)
+                                                        }
+                                                        else if (social.id === "instagram") {
+                                                            setInsta(true)
+                                                        }
+                                                        
+                                                    } else {
+                                                        field.onChange(
+                                                            // if field.value exists creates a new array that includes 
+                                                            // all items from field.value except for social.id
+                                                            field.value?.filter(
+                                                                (value) => value !== social.id
+                                                            )
                                                         )
-                                                    )
+                                                        if (social.id === "x") {
+                                                            setX(false)
+                                                        }
+                                                        else if (social.id === "instagram") {
+                                                            setInsta(false)
+                                                        }
+                                                    }
                                                 }}
                                             />
                                         </FormControl>
@@ -278,45 +300,56 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                 )}
               />
               {/*X*/}
-              <FormField
-              control={form.control}
-              name="x"
-              render={({ field }) => (
-                  <FormItem className='flex flex-col gap-3 w-full'>
-                      <FormLabel className='text-base-semibold text-black'>
-                          X
-                      </FormLabel>
-                      <FormControl >
-                          <Input 
-                              type="text"
-                              className='caret-black text-black'
-                              {...field}
-                          />
-                      </FormControl>
-                      <FormMessage/>
-                  </FormItem>
-              )}
-              />
+            {
+                showX && (
+                    <FormField
+                        control={form.control}
+                        name="x"
+                        render={({ field }) => (
+                            <FormItem className='flex flex-col gap-3 w-full'>
+                                <FormLabel className='text-base-semibold text-black'>
+                                    X
+                                </FormLabel>
+                                <FormControl >
+                                    <Input 
+                                        type="text"
+                                        className='caret-black text-black'
+                                        {...field}
+                                    />
+                                </FormControl>
+                                <FormMessage/>
+                            </FormItem>
+                        )}
+                    />
+                )
+            }
+            
+              
               {/*Instagram*/}
-              <FormField
-              control={form.control}
-              name="instagram"
-              render={({ field }) => (
-                  <FormItem className='flex flex-col gap-3 w-full'>
-                      <FormLabel className='text-base-semibold text-black'>
-                          Instagram
-                      </FormLabel>
-                      <FormControl >
-                          <Input 
-                              type="text"
-                              className='caret-black text-black'
-                              {...field}
-                          />
-                      </FormControl>
-                      <FormMessage/>
-                  </FormItem>
-              )}
-              />
+              {
+                showInsta && (
+                    <FormField
+                        control={form.control}
+                        name="instagram"
+                        render={({ field }) => (
+                            <FormItem className='flex flex-col gap-3 w-full'>
+                                <FormLabel className='text-base-semibold text-black'>
+                                    Instagram
+                                </FormLabel>
+                                <FormControl >
+                                    <Input 
+                                        type="text"
+                                        className='caret-black text-black'
+                                        {...field}
+                                    />
+                                </FormControl>
+                                <FormMessage/>
+                            </FormItem>
+                        )}
+                    />
+                )
+              }
+              
               <Button type="submit" className='bg-black hover:bg-slate-800'>Submit</Button>
           </form>
       </Form>
