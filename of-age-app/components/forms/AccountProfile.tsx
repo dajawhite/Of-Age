@@ -31,7 +31,7 @@ interface Props{
       university: string;
       number: string;
       iMessage: string;
-      email: string;
+      uniEmail: string;
       x: string;
       instagram: string;
   };
@@ -70,7 +70,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           university: user?.university || '',
           number: user?.number || '',
           iMessage: user?.iMessage || '',
-          email: user?.email || '',
+          uniEmail: user?.uniEmail || '',
           socials: [""],
           x: user?.x || '',
           instagram: user?.instagram || '',
@@ -93,7 +93,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           university: values.university,
           number: values.number,
           iMessage: user.iMessage,
-          email: values.email,
+          uniEmail: values.uniEmail,
           x: values.x,
           instagram: values.instagram,
           path: pathname
@@ -103,7 +103,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           // Go back to previous page
           router.back();
       } else{
-          router.push('/');
+          router.push('/success');
       }
     }
 
@@ -154,6 +154,29 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                   </FormItem>
               )}
               />
+              {/*email*/}
+              <FormField
+              control={form.control}
+              name="uniEmail"
+              render={({ field }) => (
+                  <FormItem className='flex flex-col gap-3 w-full'>
+                      <FormLabel className='text-base-semibold text-black'>
+                          University Email
+                      </FormLabel>
+                      <FormDescription>
+                        Enter a university email adress ending in .edu
+                      </FormDescription>
+                      <FormControl >
+                          <Input 
+                              type="text"
+                              className='caret-black text-black'
+                              {...field}
+                          />
+                      </FormControl>
+                      <FormMessage/>
+                  </FormItem>
+              )}
+              />
               {/*Number*/}
               <FormField
               control={form.control}
@@ -186,7 +209,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                       <FormControl >
                           <RadioGroup
                             onValueChange={field.onChange}
-                            defaultValue={"Yes"}
+                            defaultValue={"No"}
                             className="flex flex-col space-y-1"
                           >
                             <FormItem className="flex items-center space-x-3 space-y-0 text-black">
@@ -206,26 +229,6 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                               </FormLabel>
                             </FormItem>
                           </RadioGroup>
-                      </FormControl>
-                      <FormMessage/>
-                  </FormItem>
-              )}
-              />
-              {/*email*/}
-              <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                  <FormItem className='flex flex-col gap-3 w-full'>
-                      <FormLabel className='text-base-semibold text-black'>
-                          Email
-                      </FormLabel>
-                      <FormControl >
-                          <Input 
-                              type="text"
-                              className='caret-black text-black'
-                              {...field}
-                          />
                       </FormControl>
                       <FormMessage/>
                   </FormItem>
