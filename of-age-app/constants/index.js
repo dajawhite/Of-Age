@@ -306,9 +306,6 @@ export const universities = [
 	name: "Augustana College"
 	},
   {
-	name: "Augustana College"
-	},
-  {
 	name: "Augusta State University"
 	},
   {
@@ -616,9 +613,6 @@ export const universities = [
 	},
   {
 	name: "Bridgewater State College"
-	},
-  {
-	name: "Brigham Young University"
 	},
   {
 	name: "Brigham Young University"
@@ -4926,9 +4920,6 @@ export const universities = [
 	name: "Trinity University"
 	},
   {
-	name: "Trinity University"
-	},
-  {
 	name: "Tri-State University"
 	},
   {
@@ -6145,9 +6136,6 @@ export const universities = [
 	},
   {
 	name: "William Woods University"
-	},
-  {
-	name: "Wilmington College"
 	},
   {
 	name: "Wilmington College"

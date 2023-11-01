@@ -22,6 +22,14 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { updateUser } from '@/lib/actions/user.actions';
 import { usePathname, useRouter } from 'next/navigation';
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+  } from "@/components/ui/select"
+import { universities } from '@/constants/index'
 
 interface Props{
   user: {
@@ -54,6 +62,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
 
     const [showX, setX] = useState(false)
     const [showInsta, setInsta] = useState(false)
+    
     
 
   const router = useRouter();
@@ -138,17 +147,27 @@ const AccountProfile = ({user, btnTitle}: Props) => {
               control={form.control}
               name="university"
               render={({ field }) => (
-                  <FormItem className='flex flex-col gap-3 w-full'>
-                      <FormLabel className='text-base-semibold text-black'>
-                          University
-                      </FormLabel>
-                      <FormControl >
-                          <Input 
-                              type="text"
-                              className='caret-black text-black'
-                              {...field}
-                          />
-                      </FormControl>
+                  <FormItem className='flex flex-col gap-3 w-full text-black'>
+                        <FormLabel className='text-base-semibold text-black'>
+                            University
+                        </FormLabel>
+                        <Select 
+                            onValueChange={field.onChange} 
+                            defaultValue={field.value}
+                        >
+                            <FormControl className='text-black'>
+                                <SelectTrigger>
+                                    <SelectValue placeholder="Select your university" />
+                                </SelectTrigger> 
+                            </FormControl>
+                            
+                            <SelectContent>
+                                {universities.map((university) => (
+                                    <SelectItem value={university.name}>{university.name}</SelectItem>
+                                ))}
+                            </SelectContent>
+                        </Select>
+                      
                       <FormMessage/>
 
                   </FormItem>
