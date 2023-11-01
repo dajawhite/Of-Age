@@ -1,5 +1,6 @@
 import AccountProfile from "@/components/forms/AccountProfile"
 import { currentUser } from "@clerk/nextjs"
+import { EmailAddress } from "@clerk/nextjs/server";
 
 // onboarding happens AFTER sign in
 
@@ -14,11 +15,11 @@ async function Page(){
     const userData = {
         id: user?.id || '',
         objectId: userInfo?._id,
-        name: userInfo?.name || user?.firstName || "",
+        name: userInfo?.name || (user?.firstName + " " + user?.lastName)|| "",
         university: userInfo?.university || '',
         number: userInfo?.number || '',
         iMessage: userInfo?.iMessage || '',
-        email: user?.email || userInfo?.email || '',
+        uniEmail: user?.email || userInfo?.email || '',
         x: userInfo?.x || '',
         instagram: userInfo?.instagram || '',
     }

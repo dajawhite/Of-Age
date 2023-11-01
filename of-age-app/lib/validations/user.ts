@@ -10,9 +10,9 @@ export const UserValidation = z.object({
         .refine(number => /^\d{10}$/.test(number), {
             message: "Enter a 10 digit phone number with no spaces"
         }),
-    email: z.string()
-        .refine(email => /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email), {
-            message: "Enter a valid email"
+    uniEmail: z.string()
+        .refine(email => /^[\w-\.]+@([\w-]+\.)+edu$/.test(email), {
+            message: "Enter a valid .edu email"
         }),
     x: z.string()
         .max(15, {message: "Maximum 15 characters"}),

@@ -10,7 +10,7 @@ interface Params {
     university: string,
     number: string,
     iMessage: string,
-    email: string,
+    uniEmail: string,
     x: string,
     instagram: string,
     path: string
@@ -24,7 +24,7 @@ export async function updateUser(
             university,
             number,
             iMessage,
-            email,
+            uniEmail,
             x,
             instagram,
             path
@@ -39,13 +39,13 @@ export async function updateUser(
             // creates findOneAndUpdate query
             await User.findOneAndUpdate(
                 // search by id
-                { id: userId},
+                { id: userId },
                 {
                     name,
                     university,
                     number,
                     iMessage,
-                    email,
+                    uniEmail,
                     x,
                     instagram,
                     onboarded: true,
