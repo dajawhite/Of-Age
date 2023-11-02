@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import User from "../models/user.model";
 import { connectToDB } from "../mongoose"
+import { clerkClient } from "@clerk/nextjs";
 
 interface Params {
     userId: string,
@@ -15,6 +16,7 @@ interface Params {
     instagram: string,
     path: string
 }
+
 
 export async function updateUser(
         // object of type params 
@@ -54,11 +56,35 @@ export async function updateUser(
                 {upsert: true}
             );
 
+            await clerkClient.users.updateUserMetadata(userId, {
+                unsafeMetadata:{
+                    Socials: [{x}, {instagram}],
+                    University: university,
+                }
+            })
+
+            const EmailParams = {
+                userId: userId,
+                emailAddress: uniEmail
+            }
+
+            const PhoneParams = {
+                userId: userId,
+                phoneNumber: number
+            }
+
+
+            clerkClient.emailAddresses.createEmailAddress(EmailParams)
+            clerkClient.phoneNumbers.createPhoneNumber(PhoneParams) //TODO: not updating email
+
+
             if(path === '/profile/edit'){
                 // Allows you to revalidate data associated with a specific path
                 // useful for updating cached data
                 revalidatePath(path);
             }
+
+
         } catch (error: any) {
             throw new Error(`Failed to create/update user: ${error.message}`)
         }
