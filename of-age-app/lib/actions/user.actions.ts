@@ -73,7 +73,7 @@ export async function updateUser(
                 phoneNumber: number
             }
 
-
+            
             clerkClient.emailAddresses.createEmailAddress(EmailParams)
             clerkClient.phoneNumbers.createPhoneNumber(PhoneParams) //TODO: not updating email
 
