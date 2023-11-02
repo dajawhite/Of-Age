@@ -27,20 +27,12 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import * as z from "zod"
-import Image from 'next/image';
-import { ChangeEvent, ChangeEventHandler, useState } from 'react';
-import { Textarea } from '../ui/textarea';
+import { useState } from 'react';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
 import { updateUser } from '@/lib/actions/user.actions';
 import { usePathname, useRouter } from 'next/navigation';
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-  } from "@/components/ui/select"
+
 import { universities } from '@/constants/index'
 import { cn } from '@/lib/utils';
 import { Check, ChevronsUpDown } from "lucide-react"
@@ -77,9 +69,7 @@ const socials = [
 const AccountProfile = ({user, btnTitle}: Props) => {
 
     const [showX, setX] = useState(false)
-    const [showInsta, setInsta] = useState(false)
-    
-    
+    const [showInsta, setInsta] = useState(false)    
 
   const router = useRouter();
   const pathname = usePathname();
@@ -123,6 +113,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           instagram: values.instagram,
           path: pathname
       })
+      
 
       if(pathname === '/profile/edit'){
           // Go back to previous page
