@@ -3,7 +3,7 @@
 import Image from "next/legacy/image";
 import Link from 'next/link';
 import AOS from 'aos';
-import { SignUpButton, SignOutButton, SignedOut, SignedIn, useUser } from "@clerk/nextjs";
+import { SignUpButton, SignOutButton, SignedOut, SignedIn, useUser, UserButton } from "@clerk/nextjs";
 
 function NavBar(){
     const {user} = useUser();
@@ -40,13 +40,12 @@ function NavBar(){
                         </div>
                     </SignedIn>
                     <SignedIn>
-                        <SignOutButton >
-                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer">Sign Out 
+                        <UserButton afterSignOutUrl="/" />
+                        {/*<div className="uppercase text-white tracking-tight text-xs cursor-pointer">Sign Out 
                             <span className="hidden md:inline ml-2">
                                 <Image className="" src="/white-arrow.png" alt="" width={15} height={15} />
                             </span>
-                        </div>
-                        </SignOutButton>
+    </div>*/}
                     </SignedIn>
 
                    
