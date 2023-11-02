@@ -7,8 +7,8 @@ export const UserValidation = z.object({
         }),
     university: z.string().min(10, {message: "Enter full university name"}),
     number: z.string()
-        .refine(number => /^\d{10}$/.test(number), {
-            message: "Enter a 10 digit phone number with no spaces"
+        .refine(number => /^\+[1-9]\d{1,14}$/.test(number), {
+            message: "Enter a phone number in the format with +{countrycode}"
         }),
     uniEmail: z.string()
         .refine(email => /^[\w-\.]+@([\w-]+\.)+edu$/.test(email), {
