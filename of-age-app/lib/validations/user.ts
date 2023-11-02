@@ -18,5 +18,8 @@ export const UserValidation = z.object({
         .max(15, {message: "Maximum 15 characters"}),
     instagram: z.string()
         .max(30, {message: "Maximum 30 characters"}),
+    iMessage: z.enum(["Yes, add me", "No, I'm good"], {
+        required_error: "You need to select a notification type.",
+    }),
     
 })

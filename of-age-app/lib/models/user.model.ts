@@ -7,7 +7,7 @@ const userSchema = new Schema({
     university: {type: String, required: true},
     onboarded: {type: Boolean, default: false},
     number: {type: String },
-    iMessage: {type: String}, // TODO: selected by user in onboarding
+    iMessage: {type: String}, 
     uniEmail: {type: String},
     x: {type: String},
     instagram: {type: String}

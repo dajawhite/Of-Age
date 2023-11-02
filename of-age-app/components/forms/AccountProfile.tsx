@@ -45,6 +45,7 @@ import { universities } from '@/constants/index'
 import { cn } from '@/lib/utils';
 import { Check, ChevronsUpDown } from "lucide-react"
 
+type IMessageOption = "No, I'm good" | "Yes, add me"
 
 interface Props{
   user: {
@@ -53,7 +54,7 @@ interface Props{
       name: string;
       university: string;
       number: string;
-      iMessage: string;
+      iMessage: IMessageOption;
       uniEmail: string;
       x: string;
       instagram: string;
@@ -93,7 +94,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           name: user?.name || '',
           university: user?.university || '',
           number: user?.number || '',
-          iMessage: user?.iMessage || '',
+          iMessage: user?.iMessage || 'No, I\'m good',
           uniEmail: user?.uniEmail || '',
           socials: [""],
           x: user?.x || '',
@@ -116,7 +117,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
           name: values.name,
           university: values.university,
           number: values.number,
-          iMessage: user.iMessage,
+          iMessage: values.iMessage,
           uniEmail: values.uniEmail,
           x: values.x,
           instagram: values.instagram,
@@ -275,20 +276,20 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                       <FormControl >
                           <RadioGroup
                             onValueChange={field.onChange}
-                            defaultValue={"No"}
+                            defaultValue={"No, I'm good"}
                             className="flex flex-col space-y-1"
                           >
                             <FormItem className="flex items-center space-x-3 space-y-0 text-black">
                               <FormControl>
-                                <RadioGroupItem value="Yes" />
+                                <RadioGroupItem value="Yes, add me" />
                               </FormControl>
                               <FormLabel className="font-normal">
-                                Yes, add me to my university's iMessage group
+                                Yes, add me
                               </FormLabel>
                             </FormItem>
                             <FormItem className="flex items-center space-x-3 space-y-0 text-black">
                               <FormControl>
-                                <RadioGroupItem value="No" />
+                                <RadioGroupItem value="No, I'm good" />
                               </FormControl>
                               <FormLabel className="font-normal">
                                 No, I'm good
