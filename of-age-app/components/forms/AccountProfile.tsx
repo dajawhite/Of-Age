@@ -5,6 +5,18 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { UserValidation } from '@/lib/validations/user';
 import { Button } from "@/components/ui/button"
 import {
+    Command,
+    CommandEmpty,
+    CommandGroup,
+    CommandInput,
+    CommandItem,
+  } from "@/components/ui/command"
+  import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+  } from "@/components/ui/popover"
+import {
   Form,
   FormControl,
   FormDescription,
@@ -30,6 +42,9 @@ import {
     SelectValue,
   } from "@/components/ui/select"
 import { universities } from '@/constants/index'
+import { cn } from '@/lib/utils';
+import { Check, ChevronsUpDown } from "lucide-react"
+
 
 interface Props{
   user: {
@@ -117,12 +132,14 @@ const AccountProfile = ({user, btnTitle}: Props) => {
     }
 
   return(
-      // spread syntax to pass down properties to React component
-      <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} 
-          className="flex flex-col justify-start gap-10">
-              {/*Name*/}
-              <FormField
+    // spread syntax to pass down properties to React component
+    <Form {...form}>
+        <form 
+            onSubmit={form.handleSubmit(onSubmit)} 
+            className="flex flex-col justify-start gap-10"
+        >
+            {/*Name*/}
+            <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
@@ -147,29 +164,59 @@ const AccountProfile = ({user, btnTitle}: Props) => {
               control={form.control}
               name="university"
               render={({ field }) => (
-                  <FormItem className='flex flex-col gap-3 w-full text-black'>
-                        <FormLabel className='text-base-semibold text-black'>
+                    <FormItem className='flex flex-col text-black'>
+                        <FormLabel className=''>
                             University
                         </FormLabel>
-                        <Select 
-                            onValueChange={field.onChange} 
-                            defaultValue={field.value}
-                        >
-                            <FormControl className='text-black'>
-                                <SelectTrigger>
-                                    <SelectValue placeholder="Select your university" />
-                                </SelectTrigger> 
-                            </FormControl>
-                            
-                            <SelectContent>
-                                {universities.map((university) => (
-                                    <SelectItem value={university.name}>{university.name}</SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
-                      
+                        <Popover>
+                            <PopoverTrigger asChild>
+                                <FormControl>
+                                    <Button
+                                        variant="outline"
+                                        role='combobox'
+                                        className={cn(
+                                            "w-[200px] justify-between",
+                                            !field.value && "text-muted-foreground"
+                                        )}
+                                    >
+                                        {field.value?
+                                            universities.find(
+                                                (university) => university.name === field.value
+                                            )?.name
+                                            : "Select your university"}
+                                        <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+                                    </Button>
+                                </FormControl>
+                            </PopoverTrigger>
+                            <PopoverContent className='w-[200px] p-0'>
+                                <Command>
+                                    <CommandInput placeholder='Search university...'/>
+                                    <CommandEmpty>No university found.</CommandEmpty>
+                                    <CommandGroup>
+                                        {universities.map((university) => (
+                                            <CommandItem
+                                                value={university.name}
+                                                key={university.name}
+                                                onSelect={() => {
+                                                    form.setValue("university", university.name)
+                                                }}
+                                            >
+                                                <Check
+                                                    className={cn(
+                                                        "mr-2 h-4 w-4",
+                                                        university.name === field.value
+                                                          ? "opacity-100"
+                                                          : "opacity-0"
+                                                      )}
+                                                />
+                                                {university.name}
+                                            </CommandItem>
+                                        ))}
+                                    </CommandGroup>
+                                </Command>
+                            </PopoverContent>
+                        </Popover>      
                       <FormMessage/>
-
                   </FormItem>
               )}
               />
