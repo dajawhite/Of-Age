@@ -138,7 +138,7 @@ export default function Home() {
           <h1 className='text-5xl'>Residences</h1>
           <div className='text-2xl pr-10 space-y-4'>
             <p>From shared living to luxury tower living, Gravity offers residential spaces that are as individual as you are.</p>
-            <p className=''><a className='button rounded-full buttline'>Explore</a></p>
+            <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
           </div>
         </div>
         <Slide></Slide>
