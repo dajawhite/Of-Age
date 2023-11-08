@@ -79,9 +79,9 @@ function Slide(){
                       <div className='mt-12'>
                         <hr />
                         <div className='flex flex-row space-x-2'>
-                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Availability</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Schedule Tour</a></p>
                         </div>
                       </div>
                       
@@ -109,9 +109,9 @@ function Slide(){
                       <div className='mt-12'>
                         <hr />
                         <div className='flex flex-row space-x-2'>
-                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Availability</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Schedule Tour</a></p>
                         </div>
                       </div>
                       
@@ -139,9 +139,9 @@ function Slide(){
                       <div className='mt-12'>
                         <hr />
                         <div className='flex flex-row space-x-2'>
-                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Availability</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Schedule Tour</a></p>
                         </div>
                       </div>
                       
@@ -169,9 +169,9 @@ function Slide(){
                       <div className='mt-12'>
                         <hr />
                         <div className='flex flex-row space-x-2'>
-                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Availability</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Schedule Tour</a></p>
                         </div>
                       </div>
                       
@@ -199,9 +199,9 @@ function Slide(){
                       <div className='mt-12'>
                         <hr />
                         <div className='flex flex-row space-x-2'>
-                          <p className=''><a className='button rounded-full buttline'>Explore</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Availability</a></p>
-                          <p className=''><a className='button rounded-full buttline'>Schedule Tour</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Availability</a></p>
+                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Schedule Tour</a></p>
                         </div>
                       </div>
                     </div>
