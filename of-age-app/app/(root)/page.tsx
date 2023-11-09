@@ -135,10 +135,10 @@ export default function Home() {
       {/* what we do */}
       <section className='mt-32 lg:mt-64'>
         <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-16 px-16">
-          <h1 className='text-5xl'>Residences</h1>
-          <div className='text-2xl pr-10 space-y-4'>
-            <p>From shared living to luxury tower living, Gravity offers residential spaces that are as individual as you are.</p>
-            <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
+          <h1 className='text-5xl oswald'>Featured Universities</h1>
+          <div className='text-2xl pr-10 space-y-4 montserrat'>
+            <p>We're set on finding start-ups at every university. Here's who we have so far. What's happening at your university?</p>
+              <p className=''><a className='button rounded-full px-5 pt-2 pb-[9px] text-black border-[1px] border-solid border-black text-lg'>Submit a story</a></p>
           </div>
         </div>
         <Slide></Slide>
