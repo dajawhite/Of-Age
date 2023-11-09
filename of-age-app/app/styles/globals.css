@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "~aos/dist/aos.css";
 @import url("https://use.typekit.net/awr8udb.css");
+@import url("https://use.typekit.net/awr8udb.css");
 
  
 @layer base {
@@ -104,6 +105,24 @@ body {
   background: white;
 }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url(./fonts/Montserrat2/Montserrat-VariableFont_wght.ttf) format('ttf');
+}
+.montserrat{
+  font-family: 'montserrat', sans-serif;
+  font-weight: 400;
+}
+.droidserifItalic{
+  font-family: 'droid-serif', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.droidserif{
+  font-family: 'droid-serif', serif;
+  font-weight: 400;
+}
+
 .oswald{
   font-family: 'oswald', sans-serif;
 }
@@ -115,6 +134,7 @@ body {
 /* For text that should be semi-bold */
 .oswald.semi-bold-text {
   font-weight: 600; /* SemiBold */
+  line-height: 96px;
 }
 
 /* For bold text */
