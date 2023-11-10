@@ -61,7 +61,7 @@ function Slide(){
                     <>
                       <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1">
                     <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
-                      <h3 className='book-cover-title'>{uni.university}</h3>
+                      <h3 className='book-cover-title oswald'>{uni.university}</h3>
                     </div>
                     <img src={uni.image} />
                     <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white">
@@ -69,20 +69,20 @@ function Slide(){
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
                       </div>
-                      <h2 className='text-lg'>{uni.location}</h2>
+                      <h2 className='text-lg montserrat'>{uni.location}</h2>
                     </div>
-                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col'>
-                      <div className='space-y-4'>
-                        <h3 className='text-2xl font-semibold'>{uni.headline}</h3>
-                        <p>Student Rep<br/>{uni.student_rep}</p>
-                        <p>{uni.summary}</p>
+                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col '>
+                      <div className='space-y-4 '>
+                        <h3 className='text-2xl montserrat bold-text'>{uni.headline}</h3>
+                        <p className="montserrat semi-bold-text">Student Rep<br/>{uni.student_rep}</p>
+                        <p className="montserrat">{uni.summary}</p>
                       </div>
                       <div className='mt-12'>
                         <hr />
                         <div className='flex flex-row space-x-2'>
-                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a></p>
-                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Availability</a></p>
-                          <p className=''><a className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Schedule Tour</a></p>
+                          <p className=''>
+                            <a href={uni.website} className='button rounded-full px-5 pt-2.5 pb-[9px] text-black border-[1px] border-solid border-black'>Explore</a>
+                          </p>
                         </div>
                       </div>
                       

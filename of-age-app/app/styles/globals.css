@@ -113,6 +113,12 @@ body {
   font-family: 'montserrat', sans-serif;
   font-weight: 400;
 }
+.montserrat.bold-text{
+  font-weight: 700;
+}
+.montserrat.semi-bold-text{
+  font-weight: 600;
+}
 .droidserifItalic{
   font-family: 'droid-serif', serif;
   font-style: italic;
@@ -314,7 +320,7 @@ hr{
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 39px;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 1.15;
   position: absolute;
   top: auto;
