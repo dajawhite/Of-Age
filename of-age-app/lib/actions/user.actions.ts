@@ -72,10 +72,9 @@ export async function updateUser(
                 userId: userId,
                 phoneNumber: number
             }
-
             
             clerkClient.emailAddresses.createEmailAddress(EmailParams)
-            clerkClient.phoneNumbers.createPhoneNumber(PhoneParams) //TODO: not updating email
+            //clerkClient.phoneNumbers.createPhoneNumber(PhoneParams) //TODO: not updating email
 
 
             if(path === '/profile/edit'){
