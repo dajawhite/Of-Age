@@ -2,17 +2,11 @@
 
 import Image from "next/legacy/image";
 import Link from 'next/link';
-import AOS from 'aos';
-import { SignUpButton, SignOutButton, SignedOut, SignedIn, useUser, UserButton } from "@clerk/nextjs";
+import { SignUpButton, SignedOut, SignedIn, useUser, UserButton } from "@clerk/nextjs";
 import { ArrowRight } from "lucide-react";
 
 function NavBar(){
     const {user} = useUser();
-
-    AOS.init({
-        duration: 500,
-        once: true
-    });
 
     return (
         <div className="oa-nav w-full">
@@ -49,9 +43,6 @@ function NavBar(){
                         </div>*/}
                     </SignedIn>
 
-                   
-
-                    
                 </div>
             </nav>
         </div>
