@@ -207,13 +207,6 @@ hr{
 
 }
 
-.nav-butt {
-  align-items: center;
-  border-radius: 0.56em;
-  padding: 1.5em 1.4em 1.4em;
-  font-size: .93vw;
-  position: relative;
-}
 
 .nav-butt.login {
   background-color: rgba(10, 10, 10, .1);
@@ -224,9 +217,7 @@ hr{
   display: flex;
 }
 
-.nav-butt.signup{
-  padding-top: 1.2em;
-  padding-bottom: 1em;
+.signup{
   background-color: var(--primary);
 
 }
