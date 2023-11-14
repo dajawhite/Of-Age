@@ -19,12 +19,12 @@ function NavBar(){
                         </Link>
                     </div>
                 </div>
-                <div className=" flex flex-row nav-butt signup">
+                <div className=" flex flex-row items-center nav-butt signup">
                     <SignedOut>
                         <SignUpButton mode="modal">
-                        <div className="uppercase text-white tracking-tight text-xs cursor-pointer ">Early Access 
-                            <span className="hidden md:inline">
-                                <ArrowRight className="" color="white" size={12} />
+                        <div className="flex uppercase text-white tracking-tight text-xs cursor-pointer items-center ">Early Access 
+                            <span className="hidden md:inline-flex items-center pl-2">
+                                <ArrowRight className="" color="white" size={20} />
                             </span>
                         </div>
                         </SignUpButton>
