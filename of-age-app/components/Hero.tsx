@@ -7,7 +7,7 @@ import NavBar from './NavBar1';
 function Hero(){
     const [showImages, setShowImages] = useState(true);
     const [showText, setShowText] = useState(false);
-    const [showNavbar, setShowNavbar] = useState(false);
+    const [showNavbar, setShowNavbar] = useState(true);
     const [fadeOutImages, setFadeOutImages] = useState(false);
     const [fadeOutImage1, setFadeOutImage1] = useState(false);
     const [fadeOutImage2, setFadeOutImage2] = useState(false);
@@ -27,6 +27,7 @@ function Hero(){
     React.useEffect(() => {
         noScroll();
     }, [showNavbar]);
+
       
     
     React.useEffect(() => {
@@ -70,7 +71,7 @@ function Hero(){
       
           return () => {
             timers.forEach(timer => clearTimeout(timer));
-          }
+        }
 
     },[]);
     
@@ -96,7 +97,7 @@ function Hero(){
             {showText && (
                 <div className={`h-screen flex flex-col items-center pt-8 md:pt-28 pb-24 justify-center px-6 transition-all duration-1000 bg-black ${fadeOutText ? 'opacity-0' : ''}`} data-aos="fade-in">
                     <h1 className="text-xl text-center leading-loose text-white">
-                    Make the most of your university experience <br/> share your story & connect with others. 
+                    Make the most of your university experience <br className='hidden md:inline'/> share your story & connect with others. 
                     </h1>
                 </div>
             )}
@@ -107,13 +108,13 @@ function Hero(){
                     <NavBar data-aos="fade-down"></NavBar>
                     <header className='items-center pt-16 md:pt-28 pb-24 px-4 md:px-6 lg:px-11'>
                         <div className='mb-16 md:mb-30 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
-                            <h1 className='text-4xl md:text-6xl lg:text-8xl text-center leading-loose'>
+                            <h1 className='text-4xl md:text-6xl lg:text-8xl text-center leading-relaxed md:leading-loose'>
                                 Meet who's building startups at your university & beyond
                             </h1>
                         </div>
-                        <div className='flex flex-col items-center px-11' data-aos="fade-up" data-aos-delay="4500">
+                        <div className='flex flex-col items-center md:px-11' data-aos="fade-up" data-aos-delay="4500">
                             <p className='text-xl md:text-2xl text-center leading-loose'>
-                            Of Age is your insider pass to the university start-up ecosystem. We're passionate about students creating and building. Sign up for a first look at who's building what. 
+                            Of Age is your insider pass to the university start-up ecosystem. Sign up for a first look at who's building what. 
                             </p>
                         </div>
                     </header>
