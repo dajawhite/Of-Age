@@ -4,6 +4,7 @@ import Image from "next/legacy/image";
 import Link from 'next/link';
 import AOS from 'aos';
 import { SignUpButton, SignOutButton, SignedOut, SignedIn, useUser, UserButton } from "@clerk/nextjs";
+import { ArrowRight } from "lucide-react";
 
 function NavBar(){
     const {user} = useUser();
@@ -24,12 +25,12 @@ function NavBar(){
                         </Link>
                     </div>
                 </div>
-                <div className=" flex nav-butt signup">
+                <div className=" flex flex-row nav-butt signup">
                     <SignedOut>
                         <SignUpButton mode="modal">
                         <div className="uppercase text-white tracking-tight text-xs cursor-pointer ">Early Access 
-                            <span className="hidden md:inline ml-2 ">
-                                <Image className="ml-8" src="/white-arrow.png" alt="" width={15} height={15} />
+                            <span className="hidden md:inline">
+                                <ArrowRight className="" color="white" size={12} />
                             </span>
                         </div>
                         </SignUpButton>
@@ -45,7 +46,7 @@ function NavBar(){
                             <span className="hidden md:inline ml-2">
                                 <Image className="" src="/white-arrow.png" alt="" width={15} height={15} />
                             </span>
-    </div>*/}
+                        </div>*/}
                     </SignedIn>
 
                    
