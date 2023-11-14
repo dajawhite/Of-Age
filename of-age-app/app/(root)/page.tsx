@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className='text-black '>
       {/* header */}
-      <section className='lg:h-screen'>
+      <section className='md:h-screen'>
         <Hero></Hero>
       </section>
 

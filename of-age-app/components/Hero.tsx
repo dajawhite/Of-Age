@@ -107,13 +107,13 @@ function Hero(){
                 <div className="top-0 left-0">
                     <NavBar data-aos="fade-down"></NavBar>
                     <header className='items-center pt-16 md:pt-28 pb-24 px-4 md:px-6 lg:px-11'>
-                        <div className='mb-16 md:mb-30 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
-                            <h1 className='text-4xl md:text-6xl lg:text-8xl text-center leading-relaxed md:leading-loose'>
+                        <div className='mb-12 md:mb-30 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
+                            <h1 className='text-4xl md:text-6xl/snug xl:text-8xl/relaxed text-center leading-relaxed'>
                                 Meet who's building startups at your university & beyond
                             </h1>
                         </div>
                         <div className='flex flex-col items-center md:px-11' data-aos="fade-up" data-aos-delay="4500">
-                            <p className='text-xl md:text-2xl text-center leading-loose'>
+                            <p className='text-xl md:text-2xl/relaxed text-center'>
                             Of Age is your insider pass to the university start-up ecosystem. Sign up for a first look at who's building what. 
                             </p>
                         </div>
