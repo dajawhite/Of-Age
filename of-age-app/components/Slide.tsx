@@ -58,7 +58,7 @@ function Slide(){
               <div id="pnProductNav" ref={pnProductNavRef} className="book-collection-wrap" data-overflowing="none">
                 <div id="pnProductNavContents" className="book-list">
                   {featuredUnis.map((uni) => (
-                    <>
+                    <div key={uni.university}>
                       <div className="book-item w-full h-auto lg:w-[580px] lg:h-[670px] lg:rounded-[20px] overflow-hidden opacity-1">
                     <div className='absolute bottom-0 left-0 h-24 w-full lg:block bg-gradient-to-t from-neutral-800'>
                       <h3 className='book-cover-title oswald'>{uni.university}</h3>
@@ -88,7 +88,7 @@ function Slide(){
                       
                     </div>
                   </div>
-                    </>
+                    </div>
                   ))}
                 </div>
               </div>
