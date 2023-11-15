@@ -115,9 +115,9 @@ const AccountProfile = ({user, btnTitle}: Props) => {
       })
       
 
-      if(pathname === '/profile/edit'){
+      if(pathname === '/onboarding'){
           // Go back to previous page
-          router.back();
+          router.push('/success');
       } else{
           router.push('/success');
       }
