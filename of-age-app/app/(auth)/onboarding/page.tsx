@@ -2,6 +2,9 @@ import AccountProfile from "@/components/forms/AccountProfile"
 import { currentUser } from "@clerk/nextjs"
 
 // onboarding happens AFTER sign in
+type IMessageOption = "No, I'm good" | "Yes, add me"
+let iMessageValue:IMessageOption
+iMessageValue = "Yes, add me"
 
 async function Page(){
     //because of this await, the function must be async
@@ -13,14 +16,14 @@ async function Page(){
     //'?' checks that it exists
     const userData = {
         id: user?.id || '',
-        objectId: userInfo?._id,
-        name: userInfo?.name || (user?.firstName + " " + user?.lastName)|| "",
-        university: userInfo?.university || '',
-        number: userInfo?.number || '',
-        iMessage: userInfo?.iMessage || '',
-        uniEmail: user?.email || userInfo?.email || '',
-        x: userInfo?.x || '',
-        instagram: userInfo?.instagram || '',
+        objectId: '',
+        name: (user?.firstName + " " + user?.lastName)|| "",
+        university:'',
+        number:'',
+        iMessage:iMessageValue,
+        uniEmail: '',
+        x: '',
+        instagram: '',
     }
 
     return(
