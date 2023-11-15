@@ -1,6 +1,6 @@
 "use client"
 
-import AOS from 'aos'
+import Aos from 'aos';
 import React, { useState } from 'react'
 import NavBar from './NavBar1';
 
@@ -31,7 +31,7 @@ function Hero(){
       
     
     React.useEffect(() => {
-        AOS.init({
+        Aos.init({
             duration: 1000,
             once: true
         });
