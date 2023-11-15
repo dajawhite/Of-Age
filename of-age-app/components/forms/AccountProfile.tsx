@@ -283,7 +283,7 @@ const AccountProfile = ({user, btnTitle}: Props) => {
                                 <RadioGroupItem value="No, I'm good" />
                               </FormControl>
                               <FormLabel className="font-normal">
-                                No, I'm good
+                                No, I&apos;m good
                               </FormLabel>
                             </FormItem>
                           </RadioGroup>

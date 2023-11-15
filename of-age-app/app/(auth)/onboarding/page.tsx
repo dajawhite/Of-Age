@@ -26,7 +26,7 @@ async function Page(){
     return(
         <main className="mx-auto flex max-w-3xl flex-col justify-start px-10 py-20">
             <h1 className="text-black text-3xl font-semibold">Welcome to Of Age</h1>
-            <p className="mt-3 text-black text-base-regular">We're super simple. Just provide the info you want others to use to connect with you.</p>
+            <p className="mt-3 text-black text-base-regular">We&apos;re super simple. Just provide the info you want others to use to connect with you.</p>
 
             <section className="p-10">
                 <AccountProfile 

@@ -50,7 +50,7 @@ export default function Home() {
                 </div>
                 <div className="max-w-md">
                   <h3 className="relative text-2xl">
-                    <p>I started TCU's Frog Fund.</p>
+                    <p>I started TCU&apos;s Frog Fund.</p>
                   </h3>
                 </div>
                 <button className="z-10 relative flex items-center mt-6 pointer-events-none"  >
@@ -78,7 +78,7 @@ export default function Home() {
                 <div className="max-w-md">
                   <h3 className="relative text-2xl"></h3>
                   <div className="relative font-normal mt-2.5">
-                    <p>We're changing product design at legacy companies.</p>
+                    <p>We&apos;re changing product design at legacy companies.</p>
                   </div>
                 </div>
                 <button className="z-10 relative flex items-center mt-6 pointer-events-none"  >
@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
                 <div className="max-w-md">
                   <h3 className="relative text-2xl">
-                    <p>I'm a first-gen MIT student, building biotech. </p>
+                    <p>I&apos;m a first-gen MIT student, building biotech. </p>
                   </h3>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function Home() {
                 </div>
                 <div className="max-w-md">
                   <h3 className="relative text-2xl">
-                    <p className='text-xl'>We're sisters redesigning inventory systems for SMBs.</p>
+                    <p className='text-xl'>We&apos;re sisters redesigning inventory systems for SMBs.</p>
                   </h3>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-16 px-16">
           <h1 className='text-5xl oswald'>Featured Universities</h1>
           <div className='text-2xl pr-10 space-y-4 montserrat'>
-            <p>We're set on finding start-ups at every university. Here's who we have so far.</p>
+            <p>We&apos;re set on finding start-ups at every university. Here&apos;s who we have so far.</p>
             <p className='hidden'><a className='button rounded-full px-5 pt-2 pb-[9px] text-black border-[1px] border-solid border-black text-lg'>Submit a story</a></p>
           </div>
         </div>
