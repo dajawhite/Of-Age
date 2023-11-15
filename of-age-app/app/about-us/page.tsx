@@ -50,8 +50,8 @@ export default function About(){
                 </div>
                 <div className="lg:mt-[10.5vw] mt-[11vw] lg:flex lg:items-start text-white">
                     <div className="flex-none lg:w-[41vw] w-full">
-                        <h2 className="lg:text-[3vw] text-[7vw] leading-tight">We're not your average consulting firm.</h2>
-                        <p className="mt-[6.4vw] lg:mt-[2vw] text-[5vw] lg:text-[1.3vw]">Since 2011, Capital Group has assisted clients in achieving their business objectives. Our team’s diverse background and extensive experience in both the public and private sector brings our ingenuity and pragmatism together to deliver actionable strategies for clients.</p>
+                        <h2 className="lg:text-[3vw] text-[7vw] leading-tight">We&apos;re not your average consulting firm.</h2>
+                        <p className="mt-[6.4vw] lg:mt-[2vw] text-[5vw] lg:text-[1.3vw]">Since 2011, Capital Group has assisted clients in achieving their business objectives. Our team&apos;s diverse background and extensive experience in both the public and private sector brings our ingenuity and pragmatism together to deliver actionable strategies for clients.</p>
                     </div>
                     <div className="flex-none lg:ml-[6.25vw] lg:mt-0 mt-[17vw]">
                         <h1 className="lg:text-[15vw] text-[35vw] lg:mt-[-4vw]">$1B+</h1>
@@ -99,7 +99,7 @@ export default function About(){
                         <img src="/icon/article.png" className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"/>
                         <div className="pr-20 flex flex-col gap-x-2">
                             <h2 className="text-2xl font-semibold about-action-h">Society</h2>
-                            <p className="text-sm pt-2">Token-based, member-owned society that is built around every member’s best interest.</p>
+                            <p className="text-sm pt-2">Token-based, member-owned society that is built around every member&apos;s best interest.</p>
                         </div>
                         <a href="#" className="underline underline-offset-8 decoration-2 hover:no-underline moveRight">Explore <img src="/arrow.png" className="inline"/></a>
 
