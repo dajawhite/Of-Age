@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import Head from 'next/head'
 import Script from 'next/script'
 
 export const metadata = {
@@ -14,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <Head>
+      
         {/* Google tag (gtag.js) */}
             <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FQXEB0FYX5"></Script>
             <Script>
@@ -26,7 +25,7 @@ export default function RootLayout({
                     gtag('config', 'G-FQXEB0FYX5');
                 `}
             </Script>
-      </Head>
+      
       <html lang="en">
         <body>{children}</body>
       </html>

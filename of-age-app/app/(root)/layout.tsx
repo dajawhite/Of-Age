@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
-import Head from 'next/head'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,7 +18,6 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <Head>
             {/* Google tag (gtag.js) */}
                 <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FQXEB0FYX5"></Script>
                 <Script>
@@ -31,7 +29,6 @@ export default function RootLayout({
                         gtag('config', 'G-FQXEB0FYX5');
                     `}
                 </Script>
-            </Head>
         <html lang="en">
           <body className={inter.className}>{children}</body>
         </html>
