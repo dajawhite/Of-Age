@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
             {/* Google tag (gtag.js) */}
-            <Script src="https://www.googletagmanager.com/gtag/js?id=G-FQXEB0FYX5"/>
+            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FQXEB0FYX5"/>
                 <Script id="google-analytics">
                     {`
                         window.dataLayer = window.dataLayer || [];
