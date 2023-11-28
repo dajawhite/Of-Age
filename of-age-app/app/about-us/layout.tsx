@@ -15,16 +15,16 @@ export default function RootLayout({
     <>
       
         {/* Google tag (gtag.js) */}
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-FQXEB0FYX5"></Script>
-            <Script>
-                {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-FQXEB0FYX5"/>
+                <Script id="google-analytics">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
 
-                    gtag('config', 'G-FQXEB0FYX5');
-                `}
-            </Script>
+                        gtag('config', 'G-FQXEB0FYX5');
+                    `}
+                </Script>
       
       <html lang="en">
         <body>{children}</body>
