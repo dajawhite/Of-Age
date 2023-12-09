@@ -4,43 +4,6 @@ import { ArrowRight, Newspaper} from "lucide-react";
 export default function About(){
     return(
         <main className='text-black'>
-            <header className="pt-8 lg:pt-16 lg:px-56 px-8">
-                <div className="text-center">
-                    <h1 className="text-5xl lg:text-9xl font-bold uppercase">About Us</h1>
-                </div>
-                <div className="flex justify-center mt-4 lg:mt-10">
-                    <p className="text-left text-xl lg:text-2xl">Daja is <button className="rounded-full border-2 border-orange-400 text-orange-400 px-2 hover:bg-orange-400 hover:text-white">Determined <ArrowRight className="inline align-baseline" size={20}/></button> to get a dog,<br className="hidden lg:block"/> nothing will stand in her way.</p>
-                </div>
-                <div className="mt-4 lg:mt-10 justify-center flex flex-col">
-                    <img src="/events.jpg" className="rounded-[30px] w-auto h-[320px] lg:w-full lg:h-auto"/>
-                    <div className="hidden lg:block mt-4">
-                        <div className="grid gap-x-4">
-                            <div className="col-start-1 col-end-1 bg-orange-100 p-4 flex flex-col rounded-[30px]">
-                                <h1 className="leading-snug">Ty Corbel <br/> Cardiff <br/> 2022</h1>
-                                <a className="mt-9 uppercase text-xs underline text-orange-400">View Project</a>
-                            </div>
-                            <div className="col-start-2 col-end-6 bg-orange-100 p-4  rounded-[30px]">
-                                <ul className="flex flex-row flex-wrap gap-3 w-6/12">
-                                    <li className="rounded-full border-[1px] px-3 py-1 border-black hover:bg-black hover:text-white"><button>2022</button></li>
-                                    <li className="rounded-full border-[1px] px-3 py-1 border-black hover:bg-black hover:text-white"><button>Cardiff</button></li>
-                                    <li className="rounded-full border-[1px] px-3 py-1 border-black hover:bg-black hover:text-white"><button>Adaptive Re-Use </button></li>
-                                    <li className="rounded-full border-[1px] px-3 py-1 border-black hover:bg-black hover:text-white"><button>Residential</button></li>
-                                    <li className="rounded-full border-[1px] px-3 py-1 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white"><button>All Works <ArrowRight className="inline" size={20}/></button></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="lg:hidden mt-2">
-                        <div className="flex flex-row justify-between px-2 py-4 bg-orange-100 rounded-[30px]">
-                            <p className="ml-3">Gweithdy</p>
-                            <a className="uppercase text-xs underline text-orange-400 self-center mr-3">View Project</a>
-
-                        </div>
-
-                    </div>
-                </div>
-                
-            </header>
             <section className="mt-16 bg-black lg:px-[5vw] px-[6vw] pb-16">
                 <div className="text-white">
                     <h1 className="uppercase text-6xl font-extrabold lg:pt-24 pt-16">Our story.</h1>
