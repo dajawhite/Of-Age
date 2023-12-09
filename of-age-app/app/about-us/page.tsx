@@ -4,7 +4,7 @@ import { ArrowRight, Newspaper} from "lucide-react";
 export default function About(){
     return(
         <main className='text-black'>
-            <section className="mt-16 bg-black lg:px-[5vw] px-[6vw] pb-16">
+            <section className=" bg-black lg:px-[5vw] px-[6vw] pb-16">
                 <div className="text-white">
                     <h1 className="uppercase text-6xl font-extrabold lg:pt-24 pt-16">Our story.</h1>
                     <div className="lg:mt-[10.5vw] mt-[21vw] text-[7vw] lg:text-[3vw] leading-tight">
