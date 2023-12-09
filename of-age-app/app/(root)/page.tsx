@@ -25,7 +25,7 @@ export default function Home() {
           {/*images */}
           <div className="max-w-6xl px-6  pb-16 mx-auto space-y-16 lg:px-0 lg:space-y-0 lg:pb-[100vh]">
             {/*image 1*/}
-            <div className="lg:ml-40 z-20 lg:z-0 max-w-[290px] lg:max-w-sm relative">
+            <div className="lg:ml-40 z-30 max-w-[290px] lg:max-w-sm relative">
               <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[400px]  lg:w-[390px] h-[290px]">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout='fill' objectFit='cover' alt='' src="/paytonoa.jpg"  className="w-full h-full rounded-xl" />
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
 
             {/*image 4 */}
-            <div className="ml-auto lg:mr-20 z-30 lg:z-0 max-w-[290px] lg:max-w-sm relative">
+            <div className="ml-auto lg:mr-20 z-30 max-w-[290px] lg:max-w-sm relative">
               <div className="relative flex flex-col justify-end w-full p-6 overflow-hidden text-white bg-cover shadow-2xl rounded-xl group lg:h-[320px] h-[290px] lg:w-auto">
                 <div className="absolute inset-0 w-full h-full overflow-hidden rounded-xl" style={{clipPath:'content-box'}}>
                   <Image layout="fill" objectFit='cover' alt='' src="/camoa.jpg" className="w-full h-full transition duration-300 transform rounded-xl"/>

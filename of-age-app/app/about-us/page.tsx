@@ -1,4 +1,5 @@
 import Footer from "../../components/Footer";
+import { ArrowRight, Newspaper} from "lucide-react";
 
 export default function About(){
     return(
@@ -8,10 +9,10 @@ export default function About(){
                     <h1 className="text-5xl lg:text-9xl font-bold uppercase">About Us</h1>
                 </div>
                 <div className="flex justify-center mt-4 lg:mt-10">
-                    <p className="text-left text-xl lg:text-2xl">Daja is <button className="rounded-full border-2 border-orange-400 text-orange-400 px-2 hover:bg-orange-400 hover:text-white">Determined <img className="inline w-[16px] lg:w-[24px] "src="arrow.png"/></button> to get a dog,<br className="hidden lg:block"/> nothing will stand in her way.</p>
+                    <p className="text-left text-xl lg:text-2xl">Daja is <button className="rounded-full border-2 border-orange-400 text-orange-400 px-2 hover:bg-orange-400 hover:text-white">Determined <ArrowRight className="inline align-baseline" size={20}/></button> to get a dog,<br className="hidden lg:block"/> nothing will stand in her way.</p>
                 </div>
                 <div className="mt-4 lg:mt-10 justify-center flex flex-col">
-                    <img src="/snowy.jpg" className="rounded-[30px] w-auto h-[320px] lg:w-full lg:h-auto"/>
+                    <img src="/events.jpg" className="rounded-[30px] w-auto h-[320px] lg:w-full lg:h-auto"/>
                     <div className="hidden lg:block mt-4">
                         <div className="grid gap-x-4">
                             <div className="col-start-1 col-end-1 bg-orange-100 p-4 flex flex-col rounded-[30px]">
@@ -24,7 +25,7 @@ export default function About(){
                                     <li className="rounded-full border-[1px] px-3 py-1 border-black hover:bg-black hover:text-white"><button>Cardiff</button></li>
                                     <li className="rounded-full border-[1px] px-3 py-1 border-black hover:bg-black hover:text-white"><button>Adaptive Re-Use </button></li>
                                     <li className="rounded-full border-[1px] px-3 py-1 border-black hover:bg-black hover:text-white"><button>Residential</button></li>
-                                    <li className="rounded-full border-[1px] px-3 py-1 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white"><button>All Works <img className="inline w-[16px] "src="arrow.png"/></button></li>
+                                    <li className="rounded-full border-[1px] px-3 py-1 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white"><button>All Works <ArrowRight className="inline" size={20}/></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,7 +79,7 @@ export default function About(){
                 <h1 className="text-4xl font-bold">Take action. Start building.</h1>
                 <div className="bg-rose-100 rounded-[20px] flex lg:flex-row flex-col mt-8 lg:h-[30rem] divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-slate-50">
                     <div className="flex flex-col justify-between lg:w-1/3 items-start p-8 about-action rounded-t-[20px] lg:rounded-l-[20px] lg:rounded-tr-none gap-y-9 lg:gap-y-0">
-                        <img src="/icon/article.png" className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"/>
+                        <Newspaper size={48} />
                         <div className="pr-20 flex flex-col gap-x-2">
                             <h2 className="text-2xl font-semibold about-action-h">For Companies</h2>
                             <p className="text-sm pt-2">Start building your team and hire the most motivated remote tech talents in the world.</p>
@@ -87,7 +88,7 @@ export default function About(){
 
                     </div>
                     <div className="flex flex-col justify-between lg:w-1/3 items-start p-8 about-action gap-y-9 lg:gap-y-0">
-                        <img src="/icon/article.png" className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"/>
+                    <Newspaper size={48} />
                         <div className="pr-20 flex flex-col gap-x-2">
                             <h2 className="text-2xl font-semibold about-action-h">For Talent</h2>
                             <p className="text-sm pt-2">For the next era of work you get to be in control. Freedom, ownership and belonging.</p>
@@ -96,12 +97,12 @@ export default function About(){
 
                     </div>
                     <div className="flex flex-col justify-between lg:w-1/3 items-start p-8 about-action rounded-b-[20px] lg:rounded-r-[20px] lg:rounded-bl-none gap-y-9 lg:gap-y-0">
-                        <img src="/icon/article.png" className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"/>
+                    <Newspaper size={48} />
                         <div className="pr-20 flex flex-col gap-x-2">
                             <h2 className="text-2xl font-semibold about-action-h">Society</h2>
                             <p className="text-sm pt-2">Token-based, member-owned society that is built around every member&apos;s best interest.</p>
                         </div>
-                        <a href="#" className="underline underline-offset-8 decoration-2 hover:no-underline moveRight">Explore <img src="/arrow.png" className="inline"/></a>
+                        <a href="#" className="underline underline-offset-8 decoration-2 hover:no-underline moveRight">Explore <ArrowRight className="inline" size={20}/></a>
 
                     </div>
                 
