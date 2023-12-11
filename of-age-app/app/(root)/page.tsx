@@ -185,7 +185,8 @@ export default function Home() {
         
       </section>
 
-      <Footer></Footer>
+      <div className="mt-32 lg:mt-48"> <Footer></Footer> </div>
+      
 
     </main>
   )
