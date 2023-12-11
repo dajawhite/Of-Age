@@ -7,7 +7,7 @@ import NavBar from './NavBar1';
 function Hero(){
     const [showImages, setShowImages] = useState(true);
     const [showText, setShowText] = useState(false);
-    const [showNavbar, setShowNavbar] = useState(true);
+    const [showNavbar, setShowNavbar] = useState(false);
     const [fadeOutImages, setFadeOutImages] = useState(false);
     const [fadeOutImage1, setFadeOutImage1] = useState(false);
     const [fadeOutImage2, setFadeOutImage2] = useState(false);
