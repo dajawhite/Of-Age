@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Footer from "../../components/Footer";
-import { ArrowRight, Newspaper} from "lucide-react";
 
 export default function About(){
     return(
