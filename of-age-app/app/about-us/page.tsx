@@ -17,14 +17,14 @@ export default function About(){
                         <h2 className="lg:text-[3vw] text-[7vw] leading-tight">We&apos;re not your average consulting firm.</h2>
                         <p className="mt-[6.4vw] lg:mt-[2vw] text-[5vw] lg:text-[1.3vw]">Since 2011, Capital Group has assisted clients in achieving their business objectives. Our team&apos;s diverse background and extensive experience in both the public and private sector brings our ingenuity and pragmatism together to deliver actionable strategies for clients.</p>
                     </div>
-                    <div className=" lg:mt-0 mt-[17vw] h-96">
-                        <Image src="/events.jpg" alt='' fill={true} className="rounded-lg"/>
+                    <div className=" lg:mt-0 mt-[17vw]">
+                        <Image src="/aboutus.png" alt='' width={960} height={640} className="rounded-lg relative" style={{objectFit: "contain"}} />
                     </div>
                 </div>
-
             </section>
             
-            <Footer></Footer>
+            <div className="mt-16 lg:mt-32"> <Footer></Footer></div>
+            
         </main>
         
     )
