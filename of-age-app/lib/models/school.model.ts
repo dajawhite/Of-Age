@@ -17,3 +17,5 @@ const schoolSchema = new mongoose.Schema({
 const School = mongoose.models.School || mongoose.model('School', schoolSchema);
 
 export default School;
+
+//TODO: FORM TO REGISTER YOUR STARTUP!
