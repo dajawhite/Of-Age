@@ -145,46 +145,6 @@ export default function Home() {
       </section>
 
 
-     <section className='mt-32 lg:mt-64' >
-        <SwitchContent/>
-     </section>
-    
-      {/* here are more cool things */}
-      <section className='mt-32 lg:mt-64'>
-        <div className='flex justify-center'>
-          <h2 className='text-4xl text-center'>Here are more cool things <br/>you can do with Storio.</h2>
-        </div>
-        <div className='grid lg:grid-cols-2 grid-cols-1 gap-12 lg:px-16 px-4 mt-8'>
-          <div className="image-para-pair flex flex-col items-center justify-center lg:justify-self-end">
-            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
-            <p className="text-xl mt-4 text-center">Tag your friends, collaborators or brands.</p>
-          </div>
-          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-start">
-            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
-            <p className="text-xl mt-4  text-center ">Tag your friends, collaborators or brands.</p>
-          </div>
-          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-end">
-            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
-            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
-          </div>
-          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-start">
-            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
-            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
-          </div>
-          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-end">
-            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
-            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
-          </div>
-          <div className="image-para-pair flex flex-col justify-center items-center lg:justify-self-start">
-            <img src="/cool-thing.png" alt="Description of Image 1" className=""/>
-            <p className="text-xl mt-4  text-center">Tag your friends, collaborators or brands.</p>
-          </div>
-
-        </div>
-
-        
-      </section>
-
       <div className="mt-32 lg:mt-48"> <Footer></Footer> </div>
       
 
