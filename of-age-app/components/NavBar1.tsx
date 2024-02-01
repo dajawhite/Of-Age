@@ -23,8 +23,6 @@ function NavBar(){
         }
     }, [currentUrl])
     
-    
-
     return (
         <div className="oa-nav w-full">
             <nav className="flex justify-between items-center py-8 lg:py-4 px-11">

@@ -14,11 +14,11 @@ export default function Home() {
 
       {/* articles */}
       <section>
-        <div className="relative z-10">
+        <div className="relative z-10 montserrat text-xl">
           {/*large text */}
           <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center text-primary">
             <div className="max-w-6xl px-6 mx-auto">
-            <h2 className="text-5xl text-center lg:text-8xl lg:leading-relaxed lg:mt-0 leading-relaxed" >You are Of Age.<br className='hidden md:inline'/> They are Of Age.</h2>
+            <h2 className="text-5xl/relaxed text-center lg:text-8xl/relaxed lg:mt-0 montserrat semi-bold-text" >You are Of Age.<br className='hidden md:inline'/> They are Of Age.</h2>
             </div>
           </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl">
+                  <h3 className="relative ">
                     <p>I put an inclusive haircare line in 500 hotels worldwide.</p>
                   </h3>
                 </div>
@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                    <p className="relative text-2xl">I started TCU&apos;s Frog Fund.</p>
+                    <p className="relative ">I started TCU&apos;s Frog Fund.</p>
                 </div>
                 <button className="z-10 relative hidden items-center mt-6 pointer-events-none"  >
                   <div className="flex items-center overflow-hidden gap-x-2 group"  >
@@ -74,7 +74,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <div className="relative font-normal mt-2.5 text-2xl">
+                  <div className="relative font-normal mt-2.5">
                     <p>We&apos;re changing product design at legacy companies.</p>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <p className="relative text-2xl">I&apos;m a first-gen Purdue student, building biotech. </p>
+                  <p className="relative">I&apos;m a first-gen Purdue student, building biotech. </p>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <p className="relative text-2xl">We&apos;re sisters redesigning inventory systems for SMBs.</p>
+                  <p className="relative">We&apos;re sisters redesigning inventory systems for SMBs.</p>
                 </div>
               </div>
             </div>
@@ -128,8 +128,8 @@ export default function Home() {
       {/* what we do */}
       <section className='h-screen'>
         <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-8 px-16">
-          <h1 className='text-5xl text-primary font-semibold'>Featured Universities</h1>
-          <div className='text-3xl pr-10 space-y-4 text-primary leading-relaxed'>
+          <h1 className='text-5xl text-primary font-semibold oswald'>Featured Universities</h1>
+          <div className='text-3xl/relaxed pr-10 space-y-4 text-primary montserrat'>
             <p>We&apos;re set on finding start-ups at every university. Here&apos;s who we have so far.</p>
           </div>
         </div>

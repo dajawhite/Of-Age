@@ -109,12 +109,12 @@ function Hero(){
                     <div className="flex flex-col items-center justify-center flex-grow">
                         <header className='items-center pb-20 px-4 md:px-6 lg:px-11 text-primary'>
                             <div className='mb-12 md:mb-30 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
-                                <h1 className='text-4xl md:text-6xl/snug xl:text-8xl/relaxed text-center leading-relaxed'>
+                                <h1 className='text-4xl md:text-7xl/snug xl:text-8xl/relaxed text-center leading-relaxed oswald text-bold'>
                                 Meet who&apos;s building startups at your university & beyond
                                 </h1>
                             </div>
                             <div className='flex flex-col items-center md:px-11' data-aos="fade-up" data-aos-delay="4500">
-                                <p className='text-xl md:text-3xl/relaxed text-center'>
+                                <p className='text-xl md:text-3xl/relaxed text-center montserrat '>
                             Of Age is your insider pass to the university start-up ecosystem. 
                                 </p>
                             </div>
