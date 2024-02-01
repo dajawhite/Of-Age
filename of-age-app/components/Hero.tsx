@@ -95,8 +95,8 @@ function Hero(){
 
             {/* Text */}
             {showText && (
-                <div className={`h-screen flex flex-col items-center pt-8 md:pt-28 pb-24 justify-center px-6 transition-all duration-1000 bg-black ${fadeOutText ? 'opacity-0' : ''}`} data-aos="fade-in">
-                    <h1 className="text-xl text-center leading-loose text-white">
+                <div className={`h-screen flex flex-col items-center pt-8 md:pt-28 pb-24 justify-center px-6 transition-all duration-1000 bg-[--bgA1] ${fadeOutText ? 'opacity-0' : ''}`} data-aos="fade-in">
+                    <h1 className="text-2xl text-center leading-loose text-white">
                     Make the most of your university experience <br className='hidden md:inline'/> share your story & connect with others. 
                     </h1>
                 </div>
@@ -105,7 +105,7 @@ function Hero(){
             {/* Navbar/Header Section - Initially hidden */}
             {showNavbar && (
                 <div className='flex flex-col h-screen'>
-                    <NavBar data-aos="fade-down"></NavBar>
+                    <NavBar data-aos="fade-down" data-aos-ease="ease-in" data-aos-delay="3500"></NavBar>
                     <div className="flex flex-col items-center justify-center flex-grow">
                         <header className='items-center pb-20 px-4 md:px-6 lg:px-11 text-primary'>
                             <div className='mb-12 md:mb-30 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
