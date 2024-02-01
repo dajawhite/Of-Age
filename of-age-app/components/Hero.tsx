@@ -104,21 +104,24 @@ function Hero(){
 
             {/* Navbar/Header Section - Initially hidden */}
             {showNavbar && (
-                <div className="top-0 left-0">
+                <div className='flex flex-col h-screen'>
                     <NavBar data-aos="fade-down"></NavBar>
-                    <header className='items-center pt-16 md:pt-28 pb-24 px-4 md:px-6 lg:px-11'>
-                        <div className='mb-12 md:mb-30 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
-                            <h1 className='text-4xl md:text-6xl/snug xl:text-8xl/relaxed text-center leading-relaxed'>
-                            Meet who&apos;s building startups at your university & beyond
-                            </h1>
-                        </div>
-                        <div className='flex flex-col items-center md:px-11' data-aos="fade-up" data-aos-delay="4500">
-                            <p className='text-xl md:text-2xl/relaxed text-center'>
-                           Of Age is your insider pass to the university start-up ecosystem. 
-                            </p>
-                        </div>
-                    </header>
+                    <div className="flex flex-col items-center justify-center flex-grow">
+                        <header className='items-center pb-20 px-4 md:px-6 lg:px-11 text-primary'>
+                            <div className='mb-12 md:mb-30 flex flex-col items-center' data-aos="fade-up" data-aos-delay="4000">
+                                <h1 className='text-4xl md:text-6xl/snug xl:text-8xl/relaxed text-center leading-relaxed'>
+                                Meet who&apos;s building startups at your university & beyond
+                                </h1>
+                            </div>
+                            <div className='flex flex-col items-center md:px-11' data-aos="fade-up" data-aos-delay="4500">
+                                <p className='text-xl md:text-3xl/relaxed text-center'>
+                            Of Age is your insider pass to the university start-up ecosystem. 
+                                </p>
+                            </div>
+                        </header>
+                    </div>
                 </div>
+                
             )}
         </div> 
     )
