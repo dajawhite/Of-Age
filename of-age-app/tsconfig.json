@@ -23,6 +23,6 @@
       "@/*": ["./*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/early-acess/route.js", "components/SignUp.tsx", "app/api/route.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/early-acess/route.js", "components/SignUp.tsx", "app/api/route.js", "app/api/email/sendEmail.ts"],
   "exclude": ["node_modules"]
 }
