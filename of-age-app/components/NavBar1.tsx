@@ -19,10 +19,10 @@ function NavBar(){
                         </Link>
                     </div>
                 </div>
-                <div className=" flex flex-row items-center rounded-[8px] md:px-7 md:py-3 px-4 py-3 signup">
+                <div className=" flex flex-row items-center rounded-[8px] md:px-7 md:py-3 px-4 py-3">
                     <SignedOut>
                         <SignUpButton mode="modal">
-                        <div className="md:flex uppercase text-white text-sm cursor-pointer items-center ">Early Access 
+                        <div className="md:flex uppercase text-white text-sm cursor-pointer items-center font-semibold bg-[--primary] rounded-md py-2 px-4">Early Access 
                             <span className="hidden md:inline-flex items-center pl-2">
                                 <ArrowRight className="" color="white" size={20} />
                             </span>
@@ -31,7 +31,7 @@ function NavBar(){
                     </SignedOut>
                     <SignedIn>
                         <div className="hidden md:flex mr-4">
-                            <h1 className="font-semibold uppercase text-white">hi, {user?.firstName}</h1>
+                            <h1 className="font-medium uppercase text-primary">hi, {user?.firstName}</h1>
                         </div>
                         <UserButton afterSignOutUrl="/" />
                     </SignedIn>
