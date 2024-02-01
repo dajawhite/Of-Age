@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter, Oswald, Montserrat } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
-import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 const oswald = Oswald({

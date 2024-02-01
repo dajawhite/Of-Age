@@ -444,7 +444,8 @@ hr{
 .collections-nav-button {
   width: 40px;
   height: 40px;
-  color: black;
+  color: white;
+  background-color: #1b2954;
   cursor: pointer;
   border-radius: 50%;
   justify-content: center;
@@ -456,7 +457,7 @@ hr{
 }
 
 .collections-nav-button:hover {
-  background-color: rgba(0, 0, 0, .2);
+  background-color: var(--bgA2)
 }
 
 .collections-nav-button.collections-nav-button--left {

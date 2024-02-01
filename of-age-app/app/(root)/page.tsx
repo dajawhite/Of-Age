@@ -16,7 +16,7 @@ export default function Home() {
       <section>
         <div className="relative z-10">
           {/*large text */}
-          <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center">
+          <div className="sticky top-0 z-20 flex justify-center w-full lg:h-screen lg:items-center text-primary">
             <div className="max-w-6xl px-6 mx-auto">
             <h2 className="text-5xl text-center lg:text-8xl lg:leading-relaxed lg:mt-0 leading-relaxed" >You are Of Age.<br className='hidden md:inline'/> They are Of Age.</h2>
             </div>
@@ -49,11 +49,9 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl">
-                    <p>I started TCU&apos;s Frog Fund.</p>
-                  </h3>
+                    <p className="relative text-2xl">I started TCU&apos;s Frog Fund.</p>
                 </div>
-                <button className="z-10 relative flex items-center mt-6 pointer-events-none"  >
+                <button className="z-10 relative hidden items-center mt-6 pointer-events-none"  >
                   <div className="flex items-center overflow-hidden gap-x-2 group"  >
                     <div className="relative">
                       <div className="transition duration-500 md:group-hover:-translate-y-full py-0.5">Read the story</div>
@@ -76,12 +74,11 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl"></h3>
-                  <div className="relative font-normal mt-2.5">
+                  <div className="relative font-normal mt-2.5 text-2xl">
                     <p>We&apos;re changing product design at legacy companies.</p>
                   </div>
                 </div>
-                <button className="z-10 relative flex items-center mt-6 pointer-events-none"  >
+                <button className="z-10 relative hidden items-center mt-6 pointer-events-none"  >
                   <div className="flex items-center overflow-hidden gap-x-2 group"  >
                     <div className="relative">
                       <div className="transition duration-500 md:group-hover:-translate-y-full py-0.5">Read the story
@@ -106,9 +103,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl">
-                    <p>I&apos;m a first-gen MIT student, building biotech. </p>
-                  </h3>
+                  <p className="relative text-2xl">I&apos;m a first-gen Purdue student, building biotech. </p>
                 </div>
               </div>
             </div>
@@ -122,9 +117,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full transform rounded-xl" style={{background:'linear-gradient(360deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 60%)'}}>
                 </div>
                 <div className="max-w-md">
-                  <h3 className="relative text-2xl">
-                    <p className='text-xl'>We&apos;re sisters redesigning inventory systems for SMBs.</p>
-                  </h3>
+                  <p className="relative text-2xl">We&apos;re sisters redesigning inventory systems for SMBs.</p>
                 </div>
               </div>
             </div>
@@ -133,12 +126,11 @@ export default function Home() {
       </section>
 
       {/* what we do */}
-      <section className='mt-32 lg:mt-64'>
-        <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-16 px-16">
-          <h1 className='text-5xl oswald'>Featured Universities</h1>
-          <div className='text-2xl pr-10 space-y-4 montserrat'>
+      <section className='h-screen'>
+        <div className="grid md:grid-cols-2 gap-7 lg:gap-[30px] mb-8 px-16">
+          <h1 className='text-5xl text-primary font-semibold'>Featured Universities</h1>
+          <div className='text-3xl pr-10 space-y-4 text-primary leading-relaxed'>
             <p>We&apos;re set on finding start-ups at every university. Here&apos;s who we have so far.</p>
-            <p className='hidden'><a className='button rounded-full px-5 pt-2 pb-[9px] text-black border-[1px] border-solid border-black text-lg'>Submit a story</a></p>
           </div>
         </div>
         <Slide></Slide>
