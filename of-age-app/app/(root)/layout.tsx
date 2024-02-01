@@ -1,10 +1,19 @@
 import '../styles/globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Oswald, Montserrat } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: '--font-oswald'
+})
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: '--font-montserrat'
+})
 
 export const metadata ={
   title: 'Of Age',
@@ -19,7 +28,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
         <html lang="en">
-          <body className={inter.className}>{children}</body>
+          <body className={montserrat.variable}>{children}</body>
         </html>
     </ClerkProvider>
     
