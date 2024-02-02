@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import './styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter, Oswald, Montserrat } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
@@ -14,9 +14,12 @@ const montserrat = Montserrat({
   variable: '--font-montserrat'
 })
 
-export const metadata ={
+export const metadata: Metadata ={
   title: 'Of Age',
-  description: 'Meet who\'s building'
+  description: 'Meet who\'s building startups at your university.',
+  icons: {
+    icon: '/logo.png'
+  }
 }
 
 export default function RootLayout({
