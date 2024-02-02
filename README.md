@@ -1,2 +1,2 @@
-# oa_mvp1
-mvp 1 community
+# Of Age
+We're building a community for students to connect with others at their university who are building startups.
