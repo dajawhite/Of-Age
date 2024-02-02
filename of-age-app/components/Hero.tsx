@@ -103,7 +103,7 @@ function Hero({playAnimation}:{playAnimation: boolean}){
             {/* Text */}
             {showText && (
                 <div className={`h-screen flex flex-col items-center pt-8 md:pt-28 pb-24 justify-center px-6 transition-all duration-1000 bg-[--bgA1] ${fadeOutText ? 'opacity-0' : ''}`} data-aos="fade-in">
-                    <h1 className="text-2xl text-center leading-loose text-white">
+                    <h1 className="text-2xl/loose text-center text-white montserrat">
                     Make the most of your university experience <br className='hidden md:inline'/> share your story & connect with others. 
                     </h1>
                 </div>
