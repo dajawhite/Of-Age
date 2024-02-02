@@ -1,11 +1,11 @@
 "use client"
 
 import AOS from 'aos';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar1';
 
-function Hero(){
-    const [showImages, setShowImages] = useState(true);
+function Hero({playAnimation}:{playAnimation: boolean}){
+    const [showImages, setShowImages] = useState(false);
     const [showText, setShowText] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
     const [fadeOutImages, setFadeOutImages] = useState(false);
@@ -14,66 +14,73 @@ function Hero(){
     const [fadeOutImage3, setFadeOutImage3] = useState(false);
     const [fadeOutText, setFadeOutText] = useState(false);
 
-    
-    const noScroll = () =>{
-        if (!showNavbar){
-            document.body.style.overflow ='hidden';
-        }
-        else{
-            document.body.style.overflow = 'auto';
-        }
-    }
-
-    React.useEffect(() => {
-        noScroll();
-    }, [showNavbar]);
-
-      
-    
     React.useEffect(() => {
         AOS.init({
             duration: 1000,
             once: true
         });
+    },[])
 
-        const timers = [
-            //after 4s fade out images & within 1s remove images & show text
-            
-            setTimeout(() => {
-                setFadeOutImage1(true);
-            }, 2500),
-
-            setTimeout(() => {
-                setFadeOutImage2(true);
-            }, 3000),
-
-            setTimeout(() => {
-                setFadeOutImage3(true);
-            }, 3500),
-
-            setTimeout(() => {
-                setFadeOutImages(true);
-                setTimeout(() => {
-                    setShowImages(false);
-                    setShowText(true);
-                }, 1000)
-            }, 4000),
-
-            //after 7s fade out text & within 1s remove text & show navbar and hero
-            setTimeout(() => {
-              setFadeOutText(true);
-              setTimeout(() => {
-                setShowText(false);
-                setShowNavbar(true);
-              }, 2000); // matches the fade-out duration
-            }, 6500)
-          ];
-      
-          return () => {
-            timers.forEach(timer => clearTimeout(timer));
+    useEffect(()=>{
+        const noScroll = () => {
+            document.body.style.overflow = !showNavbar ? 'hidden' : 'auto'
         }
 
-    },[]);
+        noScroll()
+
+        return () => {
+            document.body.style.overflow = 'auto'
+        }
+
+    }, [showNavbar])
+
+
+    useEffect(() => {
+        if (playAnimation){
+            setShowImages(true)
+
+            const timers = [
+                //after 4s fade out images & within 1s remove images & show text
+                
+                setTimeout(() => {
+                    setFadeOutImage1(true);
+                }, 2500),
+    
+                setTimeout(() => {
+                    setFadeOutImage2(true);
+                }, 3000),
+    
+                setTimeout(() => {
+                    setFadeOutImage3(true);
+                }, 3500),
+    
+                setTimeout(() => {
+                    setFadeOutImages(true);
+                    setTimeout(() => {
+                        setShowImages(false);
+                        setShowText(true);
+                    }, 1000)
+                }, 4000),
+    
+                //after 7s fade out text & within 1s remove text & show navbar and hero
+                setTimeout(() => {
+                  setFadeOutText(true);
+                  setTimeout(() => {
+                    setShowText(false);
+                    setShowNavbar(true);
+                  }, 2000); // matches the fade-out duration
+                }, 6500)
+            ];
+            
+
+            return () => {
+                timers.forEach(timer => clearTimeout(timer));
+            }
+        } else {
+            setShowNavbar(true)
+        }
+    }, [playAnimation])
+    
     
     return(
         <div className='relative'>

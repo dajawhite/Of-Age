@@ -1,15 +1,31 @@
+"use client"
 import Image from "next/legacy/image"
 import Hero from '../../components/Hero'
 import Slide from '../../components/Slide'
 import Footer from '../../components/Footer'
-import SwitchContent from '../../components/sc'
+import { useEffect, useState } from "react"
 
 export default function Home() {
+
+    const [playAnimation, setPlayAnimation] = useState(false)
+    
+    useEffect(() => {
+      const hasVisited = sessionStorage.getItem('hasVisitedPage')
+      if(!hasVisited){
+        setPlayAnimation(true)
+        sessionStorage.setItem('hasVisitedPage', 'true')
+      }
+
+      console.log(playAnimation)
+      console.log(hasVisited)
+      console.log(playAnimation)
+    }, [])
+
   return (
     <main className='text-black '>
       {/* header */}
       <section className='md:h-screen'>
-        <Hero></Hero>
+        <Hero playAnimation={playAnimation}></Hero>
       </section>
 
       {/* articles */}
