@@ -6,7 +6,7 @@ import { Instagram, Linkedin, Youtube, Mail, Music2, Twitter, MoveRight } from "
 function Footer(){
 
     return(
-        <footer className='mt-32 lg:mt-48 px-2 pb-2'>
+        <footer className=' px-2 pb-2'>
         <div className='rounded-[20px] bg-blue-200/50 py-12 px-8 lg:px-16'>
           <div className='mb-24 text-center md:text-left oswald'>
             <h1 className='text-xl md:text-3xl text-primary'>Connecting the next generation of tech.</h1>

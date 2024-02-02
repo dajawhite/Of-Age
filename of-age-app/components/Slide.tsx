@@ -64,14 +64,14 @@ function Slide(){
                       <h3 className='book-cover-title oswald'>{uni.university}</h3>
                     </div>
                     <img src={uni.image} />
-                    <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white">
+                    <div className="absolute first-letter:z-[1] flex items-center justify-start gap-3 lg:gap-4 lg:top-10 lg:left-10 top-5 left-5 text-body uppercase text-white drop-shadow-lg">
                       <div className="relative hidden w-2 h-2 lg:h-3 lg:w-3">
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua animate-ping"></span>
                         <span className="absolute inline-block w-full h-full rounded-full bg-aqua"></span>
                       </div>
                       <h2 className='text-lg montserrat'>{uni.location}</h2>
                     </div>
-                    <div className='uni-cards py-8 px-8 hidden lg:flex lg:flex-col '>
+                    <div className='uni-cards py-8 px-8 hidden'>
                       <div className='space-y-4 '>
                         <h3 className='text-2xl montserrat bold-text'>{uni.headline}</h3>
                         <p className="montserrat semi-bold-text">Student Rep<br/>{uni.student_rep}</p>
@@ -94,7 +94,7 @@ function Slide(){
               </div>
             </div>
           </div>
-          <div className='flex flex-row arrows'>
+          <div className='flex flex-row space-x-2 arrows'>
             {/*left arrow*/}
             <div className="">
                 <div id="advancer-left" ref={leftArrowRef} className="collections-nav-button collections-nav-button--left">
